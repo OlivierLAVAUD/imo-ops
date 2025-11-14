@@ -121,6 +121,7 @@ flowchart TB
   - Postgres SQL (https://www.postgresql.org/download/windows/)
   - Mongodb (https://www.mongodb.com/docs/manual/installation/)
   - Redis (https://redis.io/)
+  - Plawright (https://playwright.dev/)
 
 # Installation & Usage 
 
