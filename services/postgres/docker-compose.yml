@@ -1,0 +1,23 @@
+services:
+  postgres:
+    build: .
+    container_name: db_databox
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-admin}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
+      POSTGRES_DB: ${POSTGRES_DB:-databox_db}
+      POSTGRES_MULTIPLE_DATABASES: ${POSTGRES_MULTIPLE_DATABASES:-airflow_db}
+      POSTGRES_MULTIPLE_USERS: ${POSTGRES_MULTIPLE_USERS:-airflow}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./sql/init.sql:/docker-entrypoint-initdb.d/init.sql 
+    networks:
+      - databox_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-admin} -d ${POSTGRES_DB:-databox_db}"]
+      interval: 10s
+      retries: 5
+      start_period: 10s
+    restart: always

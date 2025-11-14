@@ -1,0 +1,13 @@
+services:
+  gradio_sql:
+    build: .
+    container_name: app_gradio_sql
+    environment:
+      DATABASE_URL: ${POSTGRES_IMO_URL}
+    ports:
+      - "7860:7860"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - databox_network

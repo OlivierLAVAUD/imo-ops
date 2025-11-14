@@ -1,0 +1,30 @@
+"dbms","table_catalog","table_schema","table_name","column_name","ordinal_position","data_type","character_maximum_length","constraint_type","table_schema-2","table_name-2","column_name-2"
+"postgresql","databox_db","public","clients","id_client",1,"character varying",6,"PRIMARY KEY",NULL,NULL,NULL
+"postgresql","databox_db","public","matieres","id_matiere",1,"integer",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"postgresql","databox_db","public","matieres","nom_matiere",2,"character varying",255,"UNIQUE",NULL,NULL,NULL
+"postgresql","databox_db","public","couleurs","id_couleur",1,"integer",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"postgresql","databox_db","public","couleurs","nom_couleur",2,"character varying",255,"UNIQUE",NULL,NULL,NULL
+"postgresql","databox_db","public","matiere_couleurs","id_couleur",2,"integer",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"postgresql","databox_db","public","matiere_couleurs","id_matiere",1,"integer",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"postgresql","databox_db","public","matiere_couleurs","id_matiere",1,"integer",NULL,"FOREIGN KEY","public","matieres","id_matiere"
+"postgresql","databox_db","public","matiere_couleurs","id_couleur",2,"integer",NULL,"FOREIGN KEY","public","couleurs","id_couleur"
+"postgresql","databox_db","public","boites","id_boite",1,"integer",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"postgresql","databox_db","public","boites","id_matiere",2,"integer",NULL,"FOREIGN KEY","public","matieres","id_matiere"
+"postgresql","databox_db","public","boites","id_couleur",3,"integer",NULL,"FOREIGN KEY","public","couleurs","id_couleur"
+"postgresql","databox_db","public","commandes","id_commande",1,"integer",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"postgresql","databox_db","public","commandes","id_client",2,"character varying",6,"FOREIGN KEY","public","clients","id_client"
+"postgresql","databox_db","public","lignes_commande","id_boite",2,"integer",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"postgresql","databox_db","public","lignes_commande","id_commande",1,"integer",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"postgresql","databox_db","public","lignes_commande","id_commande",1,"integer",NULL,"FOREIGN KEY","public","commandes","id_commande"
+"postgresql","databox_db","public","lignes_commande","id_boite",2,"integer",NULL,"FOREIGN KEY","public","boites","id_boite"
+"postgresql","databox_db","public","lignes_commande","taux_remise",5,"numeric",NULL,NULL,NULL,NULL,NULL
+"postgresql","databox_db","public","boites","largeur_mm",5,"integer",NULL,NULL,NULL,NULL,NULL
+"postgresql","databox_db","public","commandes","date_commande",3,"date",NULL,NULL,NULL,NULL,NULL
+"postgresql","databox_db","public","clients","email_client",3,"character varying",255,NULL,NULL,NULL,NULL
+"postgresql","databox_db","public","boites","surface_exterieure_mm2",7,"numeric",NULL,NULL,NULL,NULL,NULL
+"postgresql","databox_db","public","boites","longueur_mm",4,"integer",NULL,NULL,NULL,NULL,NULL
+"postgresql","databox_db","public","lignes_commande","prix_unitaire",4,"numeric",NULL,NULL,NULL,NULL,NULL
+"postgresql","databox_db","public","boites","hauteur_mm",6,"integer",NULL,NULL,NULL,NULL,NULL
+"postgresql","databox_db","public","clients","nom_client",2,"character varying",255,NULL,NULL,NULL,NULL
+"postgresql","databox_db","public","lignes_commande","quantite",3,"integer",NULL,NULL,NULL,NULL,NULL
+"postgresql","databox_db","public","clients","adresse_client",4,"text",NULL,NULL,NULL,NULL,NULL

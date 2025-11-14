@@ -1,0 +1,108 @@
+services:
+
+  # Services Airflow
+  redis:
+    extends:
+      file: ./services/redis/docker-compose.yml
+      service: redis
+    networks:
+      - databox_network
+
+  airflow-init:
+    extends:
+      file: ./services/airflow/docker-compose.yml
+      service: airflow-init
+    networks:
+      - databox_network
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  airflow-webserver:
+    extends:
+      file: ./services/airflow/docker-compose.yml
+      service: airflow-webserver
+    networks:
+      - databox_network
+    depends_on:
+      - airflow-init
+      - postgres
+      - redis
+
+  airflow-scheduler:
+    extends:
+      file: ./services/airflow/docker-compose.yml
+      service: airflow-scheduler
+    networks:
+      - databox_network
+    depends_on:
+      - airflow-init
+      - postgres
+      - redis
+
+  airflow-worker:
+    extends:
+      file: ./services/airflow/docker-compose.yml
+      service: airflow-worker
+    networks:
+      - databox_network
+    depends_on:
+      - airflow-init
+      - postgres
+      - redis
+ 
+# Services Databases
+
+  postgres:
+    extends:
+      file: ./services/postgres/docker-compose.yml
+      service: postgres
+    networks:
+      - databox_network
+
+  pgadmin:
+    extends:
+      file: ./services/pgadmin/docker-compose.yml
+      service: pgadmin
+    networks:
+      - databox_network
+    depends_on:
+      - postgres
+
+  grafana:
+    extends:
+      file: ./services/grafana/docker-compose.yml
+      service: grafana
+    networks:
+      - databox_network
+
+  dashboard:
+    extends:
+      file: ./services/dashboard/docker-compose.yml
+      service: dashboard
+    networks:
+      - databox_network
+
+  gradio_sql:
+    extends:
+      file: ./services/gradio_sql/docker-compose.yml
+      service: gradio_sql
+    networks:
+      - databox_network
+    depends_on:
+      - postgres
+
+networks:
+  databox_network:
+    driver: bridge
+
+volumes:  
+  postgres_data:
+  grafana_data:
+  pg_admin_data:
+  airflow_dags:
+  airflow_logs:
+  airflow_plugins:
+  redis_data:

@@ -1,0 +1,28 @@
+services:
+  redis:
+    image: redis:7.2-alpine
+    container_name: redis_databox
+    ports:
+      - "${REDIS_PORT}:6379"
+    volumes:
+      - redis_data:/data
+      - ./redis.conf:/usr/local/etc/redis/redis.conf
+    command: redis-server /usr/local/etc/redis/redis.conf
+    healthcheck:
+      test: ["CMD", "redis-cli", "-a", "redis_password", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    restart: unless-stopped
+    networks:
+      - databox_network
+
+volumes:
+  redis_data:
+    driver: local
+
+networks:
+  databox_network:
+    external: true
+    name: databox_network

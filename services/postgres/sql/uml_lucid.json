@@ -1,0 +1,85 @@
+{
+    "type": "document",
+    "elements": [
+      {
+        "type": "class",
+        "name": "Client",
+        "attributes": [
+          "id_client : String",
+          "nom_client : String",
+          "email_client : String",
+          "adresse_client : String"
+        ]
+      },
+      {
+        "type": "class",
+        "name": "Commande",
+        "attributes": [
+          "id_commande : int",
+          "date_commande : Date"
+        ],
+        "relationships": [
+          { "target": "Client", "multiplicity": "1..*" }
+        ]
+      },
+      {
+        "type": "class",
+        "name": "LigneCommande",
+        "attributes": [
+          "quantite : int",
+          "prix_unitaire : Decimal",
+          "taux_remise : Decimal"
+        ],
+        "relationships": [
+          { "target": "Commande", "multiplicity": "1..*" },
+          { "target": "Boite", "multiplicity": "1..1" }
+        ]
+      },
+      {
+        "type": "class",
+        "name": "Boite",
+        "attributes": [
+          "id_boite : int",
+          "longueur_mm : int",
+          "largeur_mm : int",
+          "hauteur_mm : int",
+          "surface_exterieure_mm2 : Decimal"
+        ],
+        "relationships": [
+          { "target": "Matiere", "multiplicity": "1..1" },
+          { "target": "Couleur", "multiplicity": "1..1" }
+        ]
+      },
+      {
+        "type": "class",
+        "name": "Matiere",
+        "attributes": [
+          "id_matiere : int",
+          "nom_matiere : String"
+        ],
+        "relationships": [
+          { "target": "MatiereCouleur", "multiplicity": "1..*" }
+        ]
+      },
+      {
+        "type": "class",
+        "name": "Couleur",
+        "attributes": [
+          "id_couleur : int",
+          "nom_couleur : String"
+        ],
+        "relationships": [
+          { "target": "MatiereCouleur", "multiplicity": "1..*" }
+        ]
+      },
+      {
+        "type": "class",
+        "name": "MatiereCouleur",
+        "attributes": [
+          "id_matiere : int",
+          "id_couleur : int"
+        ]
+      }
+    ]
+  }
+  

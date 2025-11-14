@@ -1,0 +1,59 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.python-version
+README-Draft.md
+/services/airflow/logs/scheduler/2025-11-12
+services/c4_create_db/annonces copy 2.json
+services/c4_create_db/annonces copy.json
+services/c4_create_db/import_annonces copy.py
+services/c4_create_db/README copy.md
+services/c4_create_db/sql/create-multiple-databases copy.sh
+services/c4_create_db/sql/create_imo_db copy 2.sql
+services/c4_create_db/sql/create_imo_db copy.sql
+services/c4_create_db/test_connect_imo_db copy 2.py
+services/c4_create_db/test_connect_imo_db copy 3.py
+services/c4_create_db/test_connect_imo_db copy.py
+services/c4_create_db/test_simple_imo_db copy.py
+services/c5_api/README-dev.md
+services/gradio_sql copy/--.env
+services/gradio_sql copy/app_dash_databox.py
+services/gradio_sql/docker-compose copy.yml
+services/gradio_sql/requirements copy.txt
+/services/gradio_sql/versions
+services/postgres copy 2/docker-compose copy 2.yml
+services/postgres copy 2/docker-compose copy 3.yml
+services/postgres copy 2/docker-compose copy.yml
+services/postgres copy 2/Dockerfile copy
+/services/postgres copy 2
+services/c1_scrap/results/iad_annonces_20251112_175829.json
+services/c1_scrap/results/iad_annonces_20251112_180145.json
+services/c1_scrap/results/iad_annonces_20251112_180240.json
+services/c1_scrap/results/iad_annonces_20251112_180333.json
+services/c1_scrap/results/iad_annonces_20251112_180425.json
+services/c1_scrap/results/iad_annonces_20251112_180518.json
+services/c1_scrap/results/iad_annonces_20251112_180838.json
+services/c1_scrap/results/iad_annonces_20251112_180903.json
+services/c1_scrap/results/iad_annonces_20251112_181040.json
+services/c1_scrap/results/iad_annonces_20251112_181512.json
+services/c1_scrap/results/iad_annonces_20251112_181758.json
+services/c1_scrap/results/iad_annonces_20251112_182822.json
+services/c1_scrap/results/iad_annonces_20251112_183158.json
+services/c1_scrap/results/iad_annonces_20251112_182915.json
+services/c1_scrap/results/iad_annonces_20251112_182945.json
+services/c1_scrap/results/iad_annonces_20251112_181734.json
+services/c1_scrap/results/iad_annonces_20251112_181824.json
+services/c1_scrap/results/iad_annonces_20251112_181851.json
+services/c1_scrap/results/iad_annonces_20251112_181330.json
+services/c1_scrap/results/iad_annonces_20251112_180952.json
+services/c1_scrap/results/iad_annonces_20251112_181936.json
+services/c1_scrap/results/iad_annonces_20251112_182754.json
+services/c1_scrap/results/iad_annonces_20251112_180928.json
+services/c2_sql/sql/stats_views copy.sql
