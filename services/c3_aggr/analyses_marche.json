@@ -1,0 +1,60 @@
+{
+  "tendances": {
+    "score_global_moyen": 5.3,
+    "prix_m2_moyen": 3543.99,
+    "correlation_score_prix": 0.33,
+    "distribution_segments": {
+      "économique": 10
+    },
+    "top_10_percent": {
+      "nombre_biens": 1,
+      "prix_m2_moyen": 3969.39,
+      "caracteristiques_communes": []
+    }
+  },
+  "rapport_optimisation": {
+    "opportunites_amelioration": [
+      {
+        "reference": "1886493",
+        "recommandations": [
+          "Priorité: rénovation énergétique"
+        ]
+      }
+    ],
+    "biens_sous_cotes": [
+      {
+        "reference": "1882557",
+        "positionnement": "très_sous_cote",
+        "ecart_pourcentage": -36.31
+      },
+      {
+        "reference": "1881596",
+        "positionnement": "sous_cote",
+        "ecart_pourcentage": -29.46
+      },
+      {
+        "reference": "1884651",
+        "positionnement": "sous_cote",
+        "ecart_pourcentage": -19.96
+      }
+    ],
+    "biens_sur_cotes": [
+      {
+        "reference": "1886493",
+        "positionnement": "sur_cote",
+        "ecart_pourcentage": 23.81
+      },
+      {
+        "reference": "1887403",
+        "positionnement": "très_sur_cote",
+        "ecart_pourcentage": 35.98
+      },
+      {
+        "reference": "1882789",
+        "positionnement": "sur_cote",
+        "ecart_pourcentage": 12.0
+      }
+    ]
+  },
+  "date_analyse": "2025-11-14T14:23:49.279094"
+}
