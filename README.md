@@ -114,7 +114,7 @@ flowchart TB
 
 # Prerequisite
 
-  - uv: 
+  - uv (https://docs.astral.sh/uv/guides/install-python/)
   - Apache Airflow (https://airflow.apache.org/)   
   - Postgres SQL (https://www.postgresql.org/download/windows/)
   - Mongodb (https://www.mongodb.com/docs/manual/installation/)
