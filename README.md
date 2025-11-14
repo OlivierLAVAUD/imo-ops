@@ -62,8 +62,8 @@ flowchart TB
   %% === WORKERS DE NORMALISATION ===
   subgraph Normalizers["Workers de Normalisation"]
     WorkerAPI[Worker API]
-    WorkerFile[Worker Fichier]
-    WorkerWeb[Worker Scraping]
+    WorkerFile[Worker Fichiers]
+    WorkerWeb[Worker Web Scraping]
     WorkerDB[Worker BD]
   end
 
@@ -114,11 +114,11 @@ flowchart TB
 
 # Prerequisite
 
-    - uv: 
-    - services/c1_scrap/config.json: fichier référencant les proprietes d'acessibilité du site web, désirant être collectées, ainsi que d'autres paramètres
-
+  - uv: 
+  - Apache Airflow (https://airflow.apache.org/)   
   - Postgres SQL (https://www.postgresql.org/download/windows/)
-
+  - Mongodb (https://www.mongodb.com/docs/manual/installation/)
+  - Redis (https://redis.io/)
 
 # Installation & Usage 
 
