@@ -125,7 +125,7 @@ flowchart TB
 ## with Docker Airflow services
 ```bash
 # clone the repo
-git clone https://OlivierLAVAUD/imo-ops.git
+git clone https://github.com/OlivierLAVAUD/imo-ops.git
 cd imo-ops
 
 # Launch Docker-Desktop before and run all the services
