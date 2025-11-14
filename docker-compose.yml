@@ -61,6 +61,14 @@ services:
       service: postgres
     networks:
       - databox_network
+      
+  mongodb:
+    extends:
+      file: ./services/mongodb/docker-compose.yml
+      service: mongodb
+    networks:
+      - databox_network
+
 
   pgadmin:
     extends:
