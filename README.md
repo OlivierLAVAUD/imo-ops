@@ -24,8 +24,7 @@ postgres, fichiers csv
 - batch/pipeline de mise à disposition des données
 
 Les sources de données:
-site web: IAD-Immobilier (https://www.iadfrance.fr/): annonces achats, ventes, location sur critères multiples: (Anonymisation
-des données en respect du RGPD)
+site web: IAD-Immobilier (https://www.iadfrance.fr/): annonces achats, ventes, location sur critères multiples: 
 
 
 ## Architecture
@@ -121,8 +120,9 @@ flowchart TB
   - Postgres SQL (https://www.postgresql.org/download/windows/)
 
 
-# Installation
+# Installation & Usage 
 
+## with Docker Airflow services
 ```bash
 # clone the repo
 git clone https://OlivierLAVAUD/imo-ops.git
@@ -130,16 +130,42 @@ cd imo-ops
 
 # Launch Docker-Desktop before and run all the services
 docker-compose up -d
+
+ # Acess to the applications from Docker Desktop with https://localhost:<ports>
+```
+
+## with Docker or sources
+###  Compétence C1: Automatisation de l'extraction de données (c1_scrap Service:)
+
+```bash
+cd c1_scrap
+# see the README.md file
+```
+### Compétences C2: Développement de requêtes SQL(c2_sql Service)
+```bash
+cd c2_sql
+# see the README.md file
+```
+### Compétences C3:  Agrégation et préparation des données (c3_aggr Service)
+```bash
+cd c3_aggr
+# see the README.md file
+```
+### Compétence C4 : Création de Base de Données (c4_create_db Service)
+```bash
+cd c4_create_db
+# see the README.md file
+```
+
+### Compétence C5: Développement d’une API Rest (c5_api  Service)
+```bash
+cd c5_api
+# see the README.md file
 ```
 
 
-### Usage
-
- Acess to the applications from Docker Desktop with https://localhost:<ports>
-
-
-
-# Docker
+# Notes
+## Docker
 Cleaning Docker
 ```bash
 docker-compose down -v
