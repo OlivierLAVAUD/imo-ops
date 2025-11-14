@@ -280,6 +280,13 @@ uv run app_prep_data.py
 # Lancer l'aggrégation des données
 uv run app_aggr_data.py
 ```
+## En Base de données
+```bash
+psql -d imo_db -f ./imo_db_create_preparation.sql
+# Ingestion puis
+psql -d imo_db -f ./imo_db_create_aggregation.sql
+```
+
 
 ## Traitements détaillés :
 
