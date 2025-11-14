@@ -1,3 +1,5 @@
+![imo_ops](img/image.png)
+
 # IMO-Ops: Data Plateform IMO-Ops pour un projet en intelligence artificielle dédié au marché Immobilier
 
 
