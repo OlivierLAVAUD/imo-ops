@@ -171,20 +171,11 @@ cd c5_api
 ## Docker
 Cleaning Docker
 ```bash
-docker-compose down -v
-docker ps -aq | ForEach-Object { docker stop $_ }
-# Supprimer tous les conteneurs (arrêtés et en cours)
-docker ps -aq | ForEach-Object { docker rm -f $_ }
-# Supprimer toutes les images
-docker rmi -f $(docker images -aq)
-# Supprimer tous les volumes
-docker volume rm -f $(docker volume ls -q)
-# Supprimer tous les réseaux personnalisés
-docker network rm $(docker network ls -q --filter type=custom)
-# Nettoyer tout le cache de build
-docker builder prune -a -f
-# Supprimer les caches orphelins
-docker system prune -a -f --volumes
+# Arrête et supprime les conteneurs, réseaux, volumes, images buildées
+docker-compose down -v --rmi all
+# Supprime le cache du build
+docker builder prune
+
 
 ```
 
