@@ -3,7 +3,7 @@ services:
     build: .
     container_name: app_gradio_sql
     environment:
-      DATABASE_URL: ${DATABASE_URL}
+      IMO_URL: ${IMO_URL}
     ports:
       - "7860:7860"
     depends_on:

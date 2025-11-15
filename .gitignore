@@ -77,3 +77,5 @@ main.py-
 services/c1_scrap/results/iad_annonces_20251115_024125.json
 .env copy
 docker-compose copy.yml
+/services/postgres/tmp
+services/postgres/docker-compose copy 2.yml

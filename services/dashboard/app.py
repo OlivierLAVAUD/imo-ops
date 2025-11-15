@@ -12,13 +12,13 @@ load_dotenv()
 
 # Connexion à la base PostgreSQL avec retry
 def create_db_connection():
-    DATABASE_URL = os.getenv('DATABASE_URL')
+    IMO_URL = os.getenv('IMO_URL')
     max_retries = 5
     retry_delay = 5  # secondes
     
     for attempt in range(max_retries):
         try:
-            engine = create_engine(DATABASE_URL)
+            engine = create_engine(IMO_URL)
             # Test de connexion
             with engine.connect() as conn:
                 print("✅ Connexion PostgreSQL réussie")

@@ -10,9 +10,9 @@ def clean_database_quick():
     # Configuration
     config = {
         'host': os.getenv('DB_HOST', 'localhost'),
-        'database': os.getenv('POSTGRES_IMO_DB') or os.getenv('DB_NAME', 'imo_db'),
-        'user': os.getenv('POSTGRES_IMO_USER') or os.getenv('DB_USER', 'postgres'),
-        'password': os.getenv('POSTGRES_IMO_PASSWORD') or os.getenv('DB_PASSWORD', 'password'),
+        'database': os.getenv('IMO_DB') or os.getenv('DB_NAME', 'imo_db'),
+        'user': os.getenv('IMO_USER') or os.getenv('DB_USER', 'postgres'),
+        'password': os.getenv('IMO_PASSWORD') or os.getenv('DB_PASSWORD', 'password'),
         'port': os.getenv('DB_PORT', '5432')
     }
     

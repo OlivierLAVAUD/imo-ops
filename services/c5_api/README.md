@@ -46,9 +46,9 @@ pip install -r requirements.txt
     # Configuration Base de Données
     DB_HOST=localhost
     DB_PORT=5432
-    POSTGRES_IMO_DB=imo_db
-    POSTGRES_IMO_USER=postgres
-    POSTGRES_IMO_PASSWORD=votre_mot_de_passe
+    IMO_DB=imo_db
+    IMO_USER=postgres
+    IMO_PASSWORD=votre_mot_de_passe
 
     # Configuration API
     API_HOST=0.0.0.0

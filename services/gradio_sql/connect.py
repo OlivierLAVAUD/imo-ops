@@ -6,14 +6,14 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Vérifier si les variables sont bien chargées
-print("DATABASE_URL:", os.getenv("DATABASE_URL"))
+print("IMO_URL:", os.getenv("IMO_URL"))
 
 # Récupérer les paramètres de connexion
-DATABASE_URL = os.getenv("DATABASE_URL")
+IMO_URL = os.getenv("IMO_URL")
 
 try:
     # Connexion à la base PostgreSQL
-    conn = psycopg2.connect(DATABASE_URL)
+    conn = psycopg2.connect(IMO_URL)
     cursor = conn.cursor()
 
     # Exécuter une requête pour lister les tables

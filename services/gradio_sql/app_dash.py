@@ -11,10 +11,10 @@ from sqlalchemy import create_engine
 load_dotenv()
 
 # Database connection parameters
-DATABASE_URL = os.getenv('DATABASE_URL')
+IMO_URL = os.getenv('IMO_URL')
 
 # Analyze the database URL
-parsed_url = urlparse(DATABASE_URL)
+parsed_url = urlparse(IMO_URL)
 dbname = parsed_url.path[1:]
 user = parsed_url.username
 password = parsed_url.password
@@ -22,12 +22,12 @@ host = parsed_url.hostname
 port = parsed_url.port
 
 # Connect to the PostgreSQL database with SQLAlchemy
-engine = create_engine(DATABASE_URL)
+engine = create_engine(IMO_URL)
 
 def query_database(query):
     try:
         # Connect to the PostgreSQL database
-        with psycopg2.connect(DATABASE_URL) as conn:
+        with psycopg2.connect(IMO_URL) as conn:
             with conn.cursor() as cursor:
                 # Execute the query
                 cursor.execute(query)
@@ -73,7 +73,7 @@ iface = gr.Interface(
         gr.Plot(),
         gr.Plot()
     ],
-    title="DATABOX - SQL Query Interface",
+    title="IMO - SQL Query Interface",
     description="Enter your SQL query and get the results."
 )
 

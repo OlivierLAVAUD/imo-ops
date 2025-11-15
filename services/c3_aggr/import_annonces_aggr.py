@@ -20,9 +20,9 @@ class CompleteDataToPostgreSQL:
         # Construire l'URL de connexion pour l'affichage
         db_host = os.getenv('DB_HOST', 'localhost')
         db_port = os.getenv('DB_PORT', '5432')
-        db_name = os.getenv('POSTGRES_IMO_DB') or os.getenv('DB_NAME', 'imo_db')
-        db_user = os.getenv('POSTGRES_IMO_USER') or os.getenv('DB_USER', 'postgres')
-        db_password = os.getenv('POSTGRES_IMO_PASSWORD') or os.getenv('DB_PASSWORD', 'password')
+        db_name = os.getenv('IMO', 'imo_db')
+        db_user = os.getenv('IMO
+        db_password = os.getenv('IMO
         
         # URL pour affichage (masqué)
         db_url_masked = f"postgresql://{db_user}:[masqué]@{db_host}:{db_port}/{db_name}"

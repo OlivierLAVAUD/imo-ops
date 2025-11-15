@@ -3,13 +3,13 @@ import psycopg2
 import os
 
 # Database connection parameters
-DATABASE_URL = os.getenv('DATABASE_URL')
+IMO_URL = os.getenv('IMO_URL')
 
-print(DATABASE_URL)
+print(IMO_URL)
 def query_database(query):
     try:
         # Connect to the PostgreSQL database
-        with psycopg2.connect(DATABASE_URL) as conn:
+        with psycopg2.connect(IMO_URL) as conn:
             with conn.cursor() as cursor:
                 # Execute the query
                 cursor.execute(query)
@@ -28,7 +28,7 @@ iface = gr.Interface(
     fn=query_database,
     inputs=gr.Textbox(lines=5, placeholder="Entrez votre requête SQL ici..."),
     outputs=gr.Textbox(),
-    title="DATABOX - SQL Query Interface",
+    title="IMO - SQL Query Interface",
     description="Enter your SQL query and get the results."
 )
 
