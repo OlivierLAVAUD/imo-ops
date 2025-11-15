@@ -70,7 +70,19 @@ uv sync
 
 cd c1-scrap
 
+# scrape avec les valeurs par defaut
 uv run iad_scraper.py
+
+# Spécifier une localisation
+uv run iad_scraper.py --localisation "Lyon"
+# → Scrape seulement 5 biens
+uv run iad_scraper.py --max-biens 5
+
+# → Scrape seulement 2 pages de résultats
+uv run iad_scraper.py --max-pages 2
+
+# → Scrape 20 biens à Bordeaux sur 5 pages maximum
+uv run iad_scraper.py --localisation "Bordeaux" --max-biens 20 --max-pages 5
 ```
 
 ## with dockerfile
