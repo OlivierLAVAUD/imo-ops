@@ -1,6 +1,12 @@
 # Web Scraping to Json files (c1-scrap)
 
-Ce projet est un scraper automatisé développé en Python pour extraire des données immobilières depuis le site IAD France. Utilisant Playwright pour le navigateur headless, il permet de collecter des informations détaillées sur les annonces immobilières incluant les caractéristiques du bien, les prix, les photos, les performances énergétiques (DPE/GES), les informations de copropriété et les coordonnées des conseillers. Le scraper intègre une gestion intelligente des cookies avec plusieurs stratégies de contournement, une extraction avancée des médias (photos, vidéos, visites virtuelles), et supporte la pagination pour collecter des données à grande échelle. Configuration via fichier JSON, export des résultats structurés et paramétrage flexible font de cet outil une solution complète pour l'analyse du marché immobilier français.
+Ce projet est un scraper automatisé développé en Python pour extraire des données immobilières depuis le site IAD France. 
+
+Utilisant Playwright pour le navigateur headless, il permet de collecter des informations détaillées sur les annonces immobilières incluant les caractéristiques du bien, les prix, les photos, les performances énergétiques (DPE/GES), les informations de copropriété et les coordonnées des conseillers.
+
+ Le scraper intègre une gestion intelligente des cookies avec plusieurs stratégies de contournement, une extraction avancée des médias (photos, vidéos, visites virtuelles), et supporte la pagination pour collecter des données à grande échelle.
+ 
+ Configuration via fichier JSON, export des résultats structurés et paramétrage flexible font de cet outil une architecture de solution complète pour l'analyse du marché immobilier français à partir du web.
 
 ## 🛠 Stack Technologique
 ### Langage & Environnement
@@ -103,11 +109,5 @@ $env:MAX_BIENS=10; $env:LOCALISATION="Marseille"; docker-compose up iad-scraper-
 
 # vec des variables personnalisées Linux/Ubunu
 MAX_BIENS=10 LOCALISATION="Marseille" docker-compose up iad-scraper-custom
-
-```
-
-## Notes
-
-```bash
 
 ```

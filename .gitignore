@@ -72,3 +72,5 @@ services/c3_aggr/app_prep_data copy.py
 backup.sql-
 main.py
 main.py-
+/services/c1_scrap/versions
+/services/c1_scrap/scrapy-playwright/iad_scraper/spiders/tmp
