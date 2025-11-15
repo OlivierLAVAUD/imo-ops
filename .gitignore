@@ -74,3 +74,4 @@ main.py
 main.py-
 /services/c1_scrap/versions
 /services/c1_scrap/scrapy-playwright/iad_scraper/spiders/tmp
+services/c1_scrap/results/iad_annonces_20251115_024125.json
