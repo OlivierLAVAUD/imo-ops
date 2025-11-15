@@ -53,19 +53,11 @@ services:
       - postgres
       - redis
  
-# Services Databases
 
   postgres:
     extends:
       file: ./services/postgres/docker-compose.yml
       service: postgres
-    networks:
-      - databox_network
-      
-  mongodb:
-    extends:
-      file: ./services/mongodb/docker-compose.yml
-      service: mongodb
     networks:
       - databox_network
 
@@ -114,3 +106,4 @@ volumes:
   airflow_logs:
   airflow_plugins:
   redis_data:
+  mongo_data:
