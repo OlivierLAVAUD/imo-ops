@@ -94,6 +94,13 @@ services:
     depends_on:
       - postgres
 
+  mongodb:
+      extends:
+        file: ./services/mongodb/docker-compose.yml
+        service: mongodb
+      networks:
+        - databox_network
+
 networks:
   databox_network:
     driver: bridge
