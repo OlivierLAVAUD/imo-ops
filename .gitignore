@@ -10,6 +10,8 @@ wheels/
 .venv
 .python-version
 README-Draft.md
+/services/airflow/logs/
+/services/airflow/logs/*
 /services/airflow/logs/scheduler/2025-11-12
 services/airflow/logs/scheduler/2025-11-17/
 services/c4_create_db/annonces copy 2.json
