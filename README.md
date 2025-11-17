@@ -124,12 +124,25 @@ flowchart TB
   - Plawright (https://playwright.dev/)
 
 # Installation & Usage 
-
-## with Docker Airflow services
+# 
+```bash
 ```bash
 # clone the repo
 git clone https://github.com/OlivierLAVAUD/imo-ops.git
 cd imo-ops
+```
+
+uv venv
+# for Winddows
+.venv\Scripts\activate
+# For Linux, Ubuntu
+source .venv/bin/activate
+
+# synchronize packages
+uv sync
+```
+## with Docker Airflow services
+
 
 # Launch Docker-Desktop before and run all the services
 docker-compose up -d
