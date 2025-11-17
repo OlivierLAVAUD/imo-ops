@@ -336,7 +336,7 @@ curl -H "Authorization: Bearer VOTRE_TOKEN_JWT" \
 Mesures de sécurité implémentées
 
     - ✅ JWT avec expiration configurable
-    - ✅ Hachage des mots de passe (SHA256 - à améliorer en production)
+    - ✅ Hachage des mots de passe (SHA256)
     - ✅ Vérification des permissions par endpoint
     - ✅ Middleware CORS configurable
     - ✅ Validation des entrées avec FastAPI
