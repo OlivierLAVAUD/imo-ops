@@ -342,14 +342,6 @@ Mesures de sécurité implémentées
     - ✅ Validation des entrées avec FastAPI
     - ✅ Gestion des erreurs sécurisée
 
-Améliorations recommandées pour la production
-
-    - 🔒 Utiliser bcrypt pour le hachage des mots de passe
-    - 🔒 Configurer des origins CORS spécifiques
-    - 🔒 Renforcer le secret JWT
-    - 🔒 Implémenter le rate limiting
-    - 🔒 Ajouter des logs de sécurité
-    - 🔒 Utiliser HTTPS
 
 # 📄Licence
 
