@@ -4528,3 +4528,94 @@
 [2025-11-17T16:31:39.580+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:31:39.580+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-11-17T16:31:39.594+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:31:39.594+0000] {dag.py:4180} INFO - Setting next_dagrun for test_redis_connection to None, run_after=None
 [2025-11-17T16:31:39.616+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_redis_dag.py took 0.112 seconds
+[2025-11-17T16:32:10.177+0000] {processor.py:186} INFO - Started process (PID=43309) to work on /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:32:10.178+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_redis_dag.py for tasks to queue
+[2025-11-17T16:32:10.181+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:32:10.180+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:32:10.257+0000] {processor.py:925} INFO - DAG(s) 'test_redis_connection' retrieved from /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:32:10.283+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:32:10.283+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-17T16:32:10.303+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:32:10.302+0000] {dag.py:4180} INFO - Setting next_dagrun for test_redis_connection to None, run_after=None
+[2025-11-17T16:32:10.327+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_redis_dag.py took 0.157 seconds
+[2025-11-17T16:32:40.775+0000] {processor.py:186} INFO - Started process (PID=43377) to work on /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:32:40.776+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_redis_dag.py for tasks to queue
+[2025-11-17T16:32:40.779+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:32:40.778+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:32:40.849+0000] {processor.py:925} INFO - DAG(s) 'test_redis_connection' retrieved from /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:32:40.866+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:32:40.866+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-17T16:32:40.880+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:32:40.880+0000] {dag.py:4180} INFO - Setting next_dagrun for test_redis_connection to None, run_after=None
+[2025-11-17T16:32:40.900+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_redis_dag.py took 0.133 seconds
+[2025-11-17T16:33:11.065+0000] {processor.py:186} INFO - Started process (PID=43444) to work on /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:33:11.066+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_redis_dag.py for tasks to queue
+[2025-11-17T16:33:11.069+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:33:11.069+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:33:11.155+0000] {processor.py:925} INFO - DAG(s) 'test_redis_connection' retrieved from /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:33:11.177+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:33:11.177+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-17T16:33:11.216+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:33:11.216+0000] {dag.py:4180} INFO - Setting next_dagrun for test_redis_connection to None, run_after=None
+[2025-11-17T16:33:11.245+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_redis_dag.py took 0.190 seconds
+[2025-11-17T16:33:41.709+0000] {processor.py:186} INFO - Started process (PID=43510) to work on /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:33:41.710+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_redis_dag.py for tasks to queue
+[2025-11-17T16:33:41.713+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:33:41.713+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:33:41.774+0000] {processor.py:925} INFO - DAG(s) 'test_redis_connection' retrieved from /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:33:41.793+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:33:41.793+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-17T16:33:41.809+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:33:41.808+0000] {dag.py:4180} INFO - Setting next_dagrun for test_redis_connection to None, run_after=None
+[2025-11-17T16:33:41.834+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_redis_dag.py took 0.131 seconds
+[2025-11-17T16:34:12.087+0000] {processor.py:186} INFO - Started process (PID=43576) to work on /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:34:12.088+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_redis_dag.py for tasks to queue
+[2025-11-17T16:34:12.090+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:34:12.090+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:34:12.142+0000] {processor.py:925} INFO - DAG(s) 'test_redis_connection' retrieved from /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:34:12.159+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:34:12.159+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-17T16:34:12.174+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:34:12.174+0000] {dag.py:4180} INFO - Setting next_dagrun for test_redis_connection to None, run_after=None
+[2025-11-17T16:34:12.196+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_redis_dag.py took 0.114 seconds
+[2025-11-17T16:34:42.584+0000] {processor.py:186} INFO - Started process (PID=43643) to work on /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:34:42.585+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_redis_dag.py for tasks to queue
+[2025-11-17T16:34:42.587+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:34:42.587+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:34:42.637+0000] {processor.py:925} INFO - DAG(s) 'test_redis_connection' retrieved from /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:34:42.656+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:34:42.655+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-17T16:34:42.669+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:34:42.669+0000] {dag.py:4180} INFO - Setting next_dagrun for test_redis_connection to None, run_after=None
+[2025-11-17T16:34:42.692+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_redis_dag.py took 0.114 seconds
+[2025-11-17T16:35:13.131+0000] {processor.py:186} INFO - Started process (PID=43710) to work on /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:35:13.132+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_redis_dag.py for tasks to queue
+[2025-11-17T16:35:13.134+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:35:13.134+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:35:13.183+0000] {processor.py:925} INFO - DAG(s) 'test_redis_connection' retrieved from /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:35:13.199+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:35:13.199+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-17T16:35:13.214+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:35:13.214+0000] {dag.py:4180} INFO - Setting next_dagrun for test_redis_connection to None, run_after=None
+[2025-11-17T16:35:13.235+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_redis_dag.py took 0.110 seconds
+[2025-11-17T16:35:43.390+0000] {processor.py:186} INFO - Started process (PID=43777) to work on /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:35:43.391+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_redis_dag.py for tasks to queue
+[2025-11-17T16:35:43.393+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:35:43.393+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:35:43.442+0000] {processor.py:925} INFO - DAG(s) 'test_redis_connection' retrieved from /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:35:43.460+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:35:43.460+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-17T16:35:43.473+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:35:43.473+0000] {dag.py:4180} INFO - Setting next_dagrun for test_redis_connection to None, run_after=None
+[2025-11-17T16:35:43.494+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_redis_dag.py took 0.110 seconds
+[2025-11-17T16:36:13.579+0000] {processor.py:186} INFO - Started process (PID=43840) to work on /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:36:13.580+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_redis_dag.py for tasks to queue
+[2025-11-17T16:36:13.582+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:36:13.582+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:36:13.632+0000] {processor.py:925} INFO - DAG(s) 'test_redis_connection' retrieved from /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:36:13.649+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:36:13.649+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-17T16:36:13.663+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:36:13.663+0000] {dag.py:4180} INFO - Setting next_dagrun for test_redis_connection to None, run_after=None
+[2025-11-17T16:36:13.685+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_redis_dag.py took 0.112 seconds
+[2025-11-17T16:36:44.403+0000] {processor.py:186} INFO - Started process (PID=43907) to work on /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:36:44.404+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_redis_dag.py for tasks to queue
+[2025-11-17T16:36:44.406+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:36:44.406+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:36:44.456+0000] {processor.py:925} INFO - DAG(s) 'test_redis_connection' retrieved from /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:36:44.472+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:36:44.472+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-17T16:36:44.621+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:36:44.621+0000] {dag.py:4180} INFO - Setting next_dagrun for test_redis_connection to None, run_after=None
+[2025-11-17T16:36:44.642+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_redis_dag.py took 0.244 seconds
+[2025-11-17T16:37:14.697+0000] {processor.py:186} INFO - Started process (PID=43975) to work on /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:37:14.698+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_redis_dag.py for tasks to queue
+[2025-11-17T16:37:14.701+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:37:14.700+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:37:14.750+0000] {processor.py:925} INFO - DAG(s) 'test_redis_connection' retrieved from /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:37:14.767+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:37:14.767+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-17T16:37:14.780+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:37:14.780+0000] {dag.py:4180} INFO - Setting next_dagrun for test_redis_connection to None, run_after=None
+[2025-11-17T16:37:14.800+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_redis_dag.py took 0.108 seconds
+[2025-11-17T16:37:44.868+0000] {processor.py:186} INFO - Started process (PID=44041) to work on /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:37:44.869+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_redis_dag.py for tasks to queue
+[2025-11-17T16:37:44.871+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:37:44.871+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:37:44.923+0000] {processor.py:925} INFO - DAG(s) 'test_redis_connection' retrieved from /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:37:44.944+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:37:44.943+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-17T16:37:44.958+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:37:44.958+0000] {dag.py:4180} INFO - Setting next_dagrun for test_redis_connection to None, run_after=None
+[2025-11-17T16:37:44.979+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_redis_dag.py took 0.117 seconds
+[2025-11-17T16:38:15.241+0000] {processor.py:186} INFO - Started process (PID=44108) to work on /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:38:15.243+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_redis_dag.py for tasks to queue
+[2025-11-17T16:38:15.246+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:38:15.245+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:38:15.314+0000] {processor.py:925} INFO - DAG(s) 'test_redis_connection' retrieved from /opt/airflow/dags/test_redis_dag.py
+[2025-11-17T16:38:15.508+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:38:15.508+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-17T16:38:15.522+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:38:15.522+0000] {dag.py:4180} INFO - Setting next_dagrun for test_redis_connection to None, run_after=None
+[2025-11-17T16:38:15.544+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_redis_dag.py took 0.311 seconds
