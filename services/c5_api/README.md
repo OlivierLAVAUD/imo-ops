@@ -155,7 +155,7 @@ L'API sera accessible à : http://localhost:8000
 
 
 # 📡Endpoints
-![](/img/image.png)
+![](/img/c5_api_1.png)
 ## 🏠 Annonces
 
 | Méthode | Endpoint                      | Description |
