@@ -4430,3 +4430,45 @@
 [2025-11-17T16:24:28.138+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:24:28.138+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-11-17T16:24:28.153+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:24:28.153+0000] {dag.py:4180} INFO - Setting next_dagrun for taches_paralleles_et_sequentielles to None, run_after=None
 [2025-11-17T16:24:28.177+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parallele.py took 0.079 seconds
+[2025-11-17T16:24:58.385+0000] {processor.py:186} INFO - Started process (PID=42359) to work on /opt/airflow/dags/dag_parallele.py
+[2025-11-17T16:24:58.386+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parallele.py for tasks to queue
+[2025-11-17T16:24:58.389+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:24:58.389+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parallele.py
+[2025-11-17T16:24:58.401+0000] {processor.py:925} INFO - DAG(s) 'taches_paralleles_et_sequentielles' retrieved from /opt/airflow/dags/dag_parallele.py
+[2025-11-17T16:24:58.418+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:24:58.418+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-17T16:24:58.432+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:24:58.432+0000] {dag.py:4180} INFO - Setting next_dagrun for taches_paralleles_et_sequentielles to None, run_after=None
+[2025-11-17T16:24:58.453+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parallele.py took 0.073 seconds
+[2025-11-17T16:25:29.117+0000] {processor.py:186} INFO - Started process (PID=42426) to work on /opt/airflow/dags/dag_parallele.py
+[2025-11-17T16:25:29.122+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parallele.py for tasks to queue
+[2025-11-17T16:25:29.129+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:25:29.127+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parallele.py
+[2025-11-17T16:25:29.156+0000] {processor.py:925} INFO - DAG(s) 'taches_paralleles_et_sequentielles' retrieved from /opt/airflow/dags/dag_parallele.py
+[2025-11-17T16:25:29.179+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:25:29.179+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-17T16:25:29.195+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:25:29.195+0000] {dag.py:4180} INFO - Setting next_dagrun for taches_paralleles_et_sequentielles to None, run_after=None
+[2025-11-17T16:25:29.215+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parallele.py took 0.110 seconds
+[2025-11-17T16:25:59.776+0000] {processor.py:186} INFO - Started process (PID=42494) to work on /opt/airflow/dags/dag_parallele.py
+[2025-11-17T16:25:59.778+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parallele.py for tasks to queue
+[2025-11-17T16:25:59.783+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:25:59.782+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parallele.py
+[2025-11-17T16:25:59.803+0000] {processor.py:925} INFO - DAG(s) 'taches_paralleles_et_sequentielles' retrieved from /opt/airflow/dags/dag_parallele.py
+[2025-11-17T16:25:59.829+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:25:59.829+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-17T16:25:59.851+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:25:59.851+0000] {dag.py:4180} INFO - Setting next_dagrun for taches_paralleles_et_sequentielles to None, run_after=None
+[2025-11-17T16:25:59.880+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parallele.py took 0.114 seconds
+[2025-11-17T16:26:30.010+0000] {processor.py:186} INFO - Started process (PID=42561) to work on /opt/airflow/dags/dag_parallele.py
+[2025-11-17T16:26:30.011+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parallele.py for tasks to queue
+[2025-11-17T16:26:30.015+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:26:30.014+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parallele.py
+[2025-11-17T16:26:30.031+0000] {processor.py:925} INFO - DAG(s) 'taches_paralleles_et_sequentielles' retrieved from /opt/airflow/dags/dag_parallele.py
+[2025-11-17T16:26:30.060+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:26:30.060+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-17T16:26:30.079+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:26:30.079+0000] {dag.py:4180} INFO - Setting next_dagrun for taches_paralleles_et_sequentielles to None, run_after=None
+[2025-11-17T16:26:30.109+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parallele.py took 0.105 seconds
+[2025-11-17T16:27:00.696+0000] {processor.py:186} INFO - Started process (PID=42628) to work on /opt/airflow/dags/dag_parallele.py
+[2025-11-17T16:27:00.697+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parallele.py for tasks to queue
+[2025-11-17T16:27:00.702+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:27:00.701+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parallele.py
+[2025-11-17T16:27:00.722+0000] {processor.py:925} INFO - DAG(s) 'taches_paralleles_et_sequentielles' retrieved from /opt/airflow/dags/dag_parallele.py
+[2025-11-17T16:27:00.749+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:27:00.749+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-17T16:27:00.773+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:27:00.772+0000] {dag.py:4180} INFO - Setting next_dagrun for taches_paralleles_et_sequentielles to None, run_after=None
+[2025-11-17T16:27:00.805+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parallele.py took 0.118 seconds
+[2025-11-17T16:27:31.517+0000] {processor.py:186} INFO - Started process (PID=42695) to work on /opt/airflow/dags/dag_parallele.py
+[2025-11-17T16:27:31.518+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_parallele.py for tasks to queue
+[2025-11-17T16:27:31.521+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:27:31.520+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_parallele.py
+[2025-11-17T16:27:31.538+0000] {processor.py:925} INFO - DAG(s) 'taches_paralleles_et_sequentielles' retrieved from /opt/airflow/dags/dag_parallele.py
+[2025-11-17T16:27:31.564+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:27:31.563+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-17T16:27:31.582+0000] {logging_mixin.py:190} INFO - [2025-11-17T16:27:31.581+0000] {dag.py:4180} INFO - Setting next_dagrun for taches_paralleles_et_sequentielles to None, run_after=None
+[2025-11-17T16:27:31.608+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_parallele.py took 0.098 seconds

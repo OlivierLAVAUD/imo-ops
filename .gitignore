@@ -69,7 +69,6 @@ services/c3_aggr/app_prep_data copy 2.py
 services/c3_aggr/app_prep_data copy 3.py
 services/c3_aggr/app_prep_data copy 4.py
 services/c3_aggr/app_prep_data copy.py
-/services/c5_api/versions
 /services/gradio_sql copy-
 backup.sql-
 main.py
@@ -82,3 +81,4 @@ docker-compose copy.yml
 /services/postgres/tmp
 services/postgres/docker-compose copy 2.yml
 /services/mongodb/tmp
+/services/c5_api/versions
