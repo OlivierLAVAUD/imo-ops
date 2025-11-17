@@ -84,3 +84,4 @@ docker-compose copy.yml
 services/postgres/docker-compose copy 2.yml
 /services/mongodb/tmp
 /services/c5_api/versions/
+/services/c5_api/versions/*
