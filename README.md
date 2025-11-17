@@ -124,33 +124,41 @@ flowchart TB
   - Plawright (https://playwright.dev/)
 
 # Installation & Usage 
-# 
+
+## Clone the repo
 ```bash
-```bash
-# clone the repo
 git clone https://github.com/OlivierLAVAUD/imo-ops.git
 cd imo-ops
 ```
-
+### - Install with sources
+####  Create python env
+```bash
 uv venv
-# for Winddows
-.venv\Scripts\activate
-# For Linux, Ubuntu
-source .venv/bin/activate
 
-# synchronize packages
+# for Windows
+.venv\Scripts\activate
+
+# or for Linux, Ubuntu
+source .venv/bin/activate
+```
+
+####   Synchronize packages
+```bash
 uv sync
 ```
-## with Docker Airflow services
 
 
-# Launch Docker-Desktop before and run all the services
+### - Install with Docker
+
+
+####  Launch Docker-Desktop before and run all the services
+```bash
 docker-compose up -d
 
- # Acess to the applications from Docker Desktop with https://localhost:<ports>
+ # Access to the applications from Docker Desktop with https://localhost:<ports>
 ```
 
-## with Docker or sources
+## Source code & scripts
 ###  Compétence C1: Automatisation de l'extraction de données (c1_scrap Service:)
 
 ```bash
@@ -180,7 +188,7 @@ cd c5_api
 ```
 
 
-# Notes
+# Technichal References
 ## Docker
 Cleaning Docker
 ```bash
