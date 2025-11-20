@@ -1,16 +1,12 @@
-#
 
 # Airflow
 
+![](img/airflow-5.png)
 
-docker-compose down -v
-
-
+![](img/airflow-4.png)
 # Installation 
 
 ```bash
-# Construction des images
-docker-compose build --no-cache
 
 # Demarrer les serviecs
 docker-compose up -d
@@ -141,6 +137,6 @@ print('✅ Tous les imports pour votre DAG fonctionnent parfaitement!')
 ![](img/airflow-5.png)
 ![](img/airflow-2.png)
 ![](img/airflow-3.png)
-![](img/airflow-4.png)
+
 
 
