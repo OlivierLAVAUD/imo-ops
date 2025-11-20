@@ -29,7 +29,7 @@ Les sources de données:
 site web: IAD-Immobilier (https://www.iadfrance.fr/): annonces achats, ventes, location sur critères multiples: 
 
 
-## Architecture
+## Architecture AirfloW-Redis-Postgres-Mongodb pour MlOps
 
 
 ```mermaid
@@ -111,7 +111,108 @@ flowchart TB
   AggAPI --> DBAPI
   
 ```
+# Architecture AirfloW-Redis-Spark-Postgres pour MLOps
+```mermaid
+flowchart TB
 
+  %% === ORCHESTRATEUR PRINCIPAL ===
+  subgraph MainOrchestrator["ORCHESTRATEUR PRINCIPAL - main_orchestrator.py"]
+    MainOrch[Main Orchestrator - Apache Airflow]
+  end
+
+  %% === PIPELINES ===
+  subgraph Pipelines["Pipelines de Collecte"]
+    PipeAPI[Pipeline API]
+    PipeFile[Pipeline Fichier]
+    PipeWeb[Pipeline Web Scraping]
+    PipeDB[Pipeline Base de Données SQL - No SQL]
+  end
+
+  %% === REDIS QUEUES ===
+  subgraph RedisQ["Redis Queues par Source"]
+    QueueAPI[Redis Queue - API]
+    QueueFile[Redis Queue - Fichier]
+    QueueWeb[Redis Queue - Scraping]
+    QueueDB[Redis Queue - BD]
+  end
+
+  %% === MESSAGE BROKER ===
+  subgraph Broker["Message Broker - Redis"]
+    BrokerCore[Gestion des files - Communication inter-pipelines]
+  end
+
+  %% === WORKERS DE NORMALISATION ===
+  subgraph Normalizers["Workers de Normalisation"]
+    WorkerAPI[Worker API]
+    WorkerFile[Worker Fichiers]
+    WorkerWeb[Worker Web Scraping]
+    WorkerDB[Worker BD]
+  end
+
+  %% === SPARK CORE ===
+  subgraph SparkCore["Apache Spark Cluster"]
+    SparkSession[Spark Session]
+    SparkSQL[Spark SQL - DataFrames]
+    SparkStreaming[Spark Streaming]
+    SparkML[MLlib - Machine Learning]
+  end
+
+  %% === WORKERS D'AGREGATION ===
+  subgraph Aggregators["Workers d'Agrégation Spark"]
+    AggAPI[Spark Aggregator - Traitement Distribué]
+  end
+
+  %% === STOCKAGE SPARK ===
+  subgraph SparkStorage["Stockage Spark & Data Lake"]
+    DataLake[(Data Lake - Parquet/Delta)]
+    SparkWarehouse[(Spark Warehouse)]
+  end
+
+  %% === BASES FINALES ===
+  subgraph FinalDBs["Bases Finales Optimisées"]
+    AnalyticsDB[(PostgreSQL - Analytics)]
+    ServingDB[(API Serving Layer)]
+  end
+
+  %% === LIENS ===
+  MainOrch --> PipeAPI
+  MainOrch --> PipeFile
+  MainOrch --> PipeWeb
+  MainOrch --> PipeDB
+
+  PipeAPI --> QueueAPI
+  PipeFile --> QueueFile
+  PipeWeb --> QueueWeb
+  PipeDB --> QueueDB
+
+  QueueAPI --> BrokerCore
+  QueueFile --> BrokerCore
+  QueueWeb --> BrokerCore
+  QueueDB --> BrokerCore
+
+  BrokerCore --> WorkerAPI
+  BrokerCore --> WorkerFile
+  BrokerCore --> WorkerWeb
+  BrokerCore --> WorkerDB
+
+  WorkerAPI --> SparkSession
+  WorkerFile --> SparkSession
+  WorkerWeb --> SparkSession
+  WorkerDB --> SparkSession
+
+  SparkSession --> AggAPI
+  AggAPI --> SparkSQL
+  AggAPI --> SparkStreaming
+  AggAPI --> SparkML
+  
+  SparkSQL --> DataLake
+  SparkStreaming --> DataLake
+  SparkML --> DataLake
+  
+  DataLake --> SparkWarehouse
+  SparkWarehouse --> AnalyticsDB
+  SparkWarehouse --> ServingDB
+```
 
 
 # Prerequisite

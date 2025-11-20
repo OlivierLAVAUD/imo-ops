@@ -143,8 +143,6 @@ flowchart TB
 ```
 
 
-
-
 ```text
 Redis
     ✅ Buffer temps réel entre collecte et Spark
@@ -160,8 +158,24 @@ Spark
     ✅ Data Lake et entrepôt de donnée
 
 ```
-## Architecture Opitmisee pour imo-ops
+## Architecture Optimisee pour imo-ops
+```text
+📊 Flux de Données Optimisé
 
+    - Collecte → Données vers Redis Streams + Cache metadata
+    - Streaming → Spark lit Redis Streams, traite et écrit dans Bronze
+    - Batch → Spark nettoie Bronze → Silver → Gold
+    - Serving → Données agrégées vers PostgreSQL + API
+
+🎯 Avantages de cette Architecture
+
+    ✅ Faible latence avec Redis pour le temps réel
+    ✅ Scalabilité horizontale avec Spark
+    ✅ Data Lake pour l'historique complet
+    ✅ Déduplication efficace avec Bloom Filters
+    ✅ Monitoring via Airflow
+    ✅ Séparation des concerns claire
+```
 ```mermaid
 flowchart TB
     %% === ORCHESTRATION ===
@@ -242,6 +256,7 @@ flowchart TB
     Gold --> PostgreSQL
     Gold --> Analytics
 ```
+
 
 # Utilisation
 ```bash
