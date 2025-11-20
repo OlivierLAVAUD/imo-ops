@@ -179,8 +179,9 @@ docker-compose --profile spark up -d
     - Spark History Server : http://localhost:18080
     - Airflow : http://localhost:8080
 
-![spark](img/spark-1.png)
-
+![spark](img/spark-3.png)
+![spark](img/spark-5.png)
+![spark](img/spark-4.png)
 
 
 ## Compétences
