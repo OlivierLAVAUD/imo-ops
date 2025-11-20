@@ -28,8 +28,8 @@ postgres, fichiers csv
 Les sources de données:
 site web: IAD-Immobilier (https://www.iadfrance.fr/): annonces achats, ventes, location sur critères multiples: 
 
-
-## Architecture Airflow-Redis-Postgres-Mongodb pour MlOps
+# Architecture
+## Architecture Airflow-Redis-Postgres-Mongodb pour MLOps
 
 
 ```mermaid
@@ -111,7 +111,7 @@ flowchart TB
   AggAPI --> DBAPI
   
 ```
-# Architecture Airflow-Redis-Spark-Postgres pour MLOps
+## Architecture Airflow-Redis-Spark-Postgres pour MLOps
 ```mermaid
 flowchart TB
 
