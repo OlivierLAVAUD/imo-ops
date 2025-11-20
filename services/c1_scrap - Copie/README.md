@@ -4,14 +4,14 @@ Ce projet est un scraper automatisé développé en Python pour extraire des don
 
 Utilisant Playwright pour le navigateur headless, il permet de collecter des informations détaillées sur les annonces immobilières incluant les caractéristiques du bien, les prix, les photos, les performances énergétiques (DPE/GES), les informations de copropriété et les coordonnées des conseillers.
 
- Le scraper intègre une gestion des cookies , une extraction avancée des médias (photos, vidéos, visites virtuelles), et supporte la pagination pour collecter des données à grande échelle.
+ Le scraper intègre une gestion intelligente des cookies avec plusieurs stratégies de contournement, une extraction avancée des médias (photos, vidéos, visites virtuelles), et supporte la pagination pour collecter des données à grande échelle.
  
  Configuration via fichier JSON, export des résultats structurés et paramétrage flexible font de cet outil une architecture de solution complète pour l'analyse du marché immobilier français à partir du web.
 
 ## 🛠 Stack Technologique
 ### Langage & Environnement
 
-    - Python 3.7+
+    - Python 3.7+ - Langage principal avec support asynchrone
     - Asyncio - Pour le traitement concurrent et les opérations I/O non-bloquantes
 
 ### Web Scraping & Automatisation
@@ -26,7 +26,10 @@ Utilisant Playwright pour le navigateur headless, il permet de collecter des inf
 
 ### Architecture & Conception
 
+    - Programmation Orientée Objet - Design modulaire et extensible
+
     - Classes Spécialisées :
+
         - CookieManager - Gestion intelligente des consentements
         - DataExtractor - Extraction structurée des données
         - MediaExtractor - Traitement des médias et photos
@@ -43,22 +46,40 @@ Utilisant Playwright pour le navigateur headless, il permet de collecter des inf
     - Fichiers JSON - Configuration flexible du scraping
     - Variables d'environnement - Paramétrage déploiement
     - Arguments CLI - Interface en ligne de commande
+
+### Fonctionnalités Avancées
+
     - Gestion d'erreurs robuste - Continuité de service
     - Pagination automatique - Collecte multi-pages
     - Délais configurables - Respect des politiques sites
     - Export structuré - Données prêtes pour analyse
 
-# Configuration
+# Prerequisite
 
-    - config.json: fichier référencant les proprietes d'acessibilité du site web, désirant être collectées
-    - config-playwright.json: détermine la structure de sortie du json en sortie:
+    - uv: 
+    - config.json: fichier référencant les proprietes d'acessibilité du site web, désirant être collectées, ainsi que 
 
-# Usage
+# Installation
 
 ## with sources
 ```bash
+
+git clone https://OlivierLAVAUD/imo-ops.git 
+cd immo-ops
+uv sync
+
+cd c1-scrap
+
 # scrape avec les valeurs par defaut
 uv run iad_scraper.py
+
+# Spécifier une localisation
+uv run iad_scraper.py --localisation "Lyon"
+# → Scrape seulement 5 biens
+uv run iad_scraper.py --max-biens 5
+
+# → Scrape seulement 2 pages de résultats
+uv run iad_scraper.py --max-pages 2
 
 # → Scrape 20 biens à Bordeaux sur 5 pages maximum
 uv run iad_scraper.py --localisation "Bordeaux" --max-biens 20 --max-pages 5
@@ -66,25 +87,39 @@ uv run iad_scraper.py --localisation "Bordeaux" --max-biens 20 --max-pages 5
 
 ## with dockerfile
 
+
 ```bash
-# 1. Demarrer le service de scraping (le conteneur reste démarré et actif)
-docker-compose up -d
+# Construire l'image
+docker build -t iad-scraper .
 
-# 2. Lancer la requete de scraping
-docker exec iad-scraper python iad_scraper.py --localisation "Paris" --max-biens 10
-docker exec iad-scraper python iad_scraper.py --localisation "Lyon" --max-biens 5
+# Exécuter avec paramètres par défaut
+docker run -it --rm iad-scraper
 
-# 3. Voir les fichiers dans le conteneur
-docker exec iad-scraper ls -la /app/results/
+# Exécuter avec paramètres personnalisés (Powershell)
+docker run -it --rm `
+  -v "${PWD}/results:/app/results" `
+  -e LOCALISATION="Lyon" `
+  -e MAX_BIENS=10 `
+  iad-scraper
 
-# 4. Copier tout le répertoire de resultats produits
-docker cp iad-scraper:/app/results/ ./downloads/
-
-# 5. Copier un fichier spécifique du conteneur vers votre machine
-docker cp iad-scraper:/app/results/mon_fichier.json ./downloads/
-
-# 6. Arrêter & supprimer le conteneur, images, .. associées
-docker-compose --profile scraping down -v --rmi all
+# Linux Ubuntu
+docker run -it --rm \
+  -v "$(pwd)/results:/app/results" \
+  -e LOCALISATION="Lyon" \
+  -e MAX_BIENS=10 \
+  iad-scraper
 
 ```
 
+## with docker-compose
+```bash
+# Avec les valeurs par défaut
+docker-compose up iad-scraper
+
+# Avec des variables personnalisées ( powershell)
+$env:MAX_BIENS=10; $env:LOCALISATION="Marseille"; docker-compose up iad-scraper-custom
+
+# vec des variables personnalisées Linux/Ubunu
+MAX_BIENS=10 LOCALISATION="Marseille" docker-compose up iad-scraper-custom
+
+```

@@ -280,10 +280,6 @@ class IADFranceScraper:
     def __init__(self, config_file: str = "config.json"):
         self.config = self._load_config(config_file)
         self.results = []
-        self.browser = None
-        self.playwright = None
-        self.context = None
-        self.page = None
         
     def _load_config(self, config_file: str) -> Dict[str, Any]:
         """Charge la configuration depuis le fichier JSON"""
@@ -304,18 +300,6 @@ class IADFranceScraper:
         self.page = await self.context.new_page()
         self.cookie_manager = CookieManager(self.page)
         self.data_extractor = DataExtractor(self.config, self.context)
-        
-    async def close(self):
-        """Fermer le browser proprement"""
-        try:
-            if self.browser:
-                await self.browser.close()
-                self.browser = None
-            if self.playwright:
-                await self.playwright.stop()
-                self.playwright = None
-        except Exception as e:
-            print(f"⚠️ Erreur lors de la fermeture du browser: {e}")
     
     async def navigate_to_site(self):
         """Navigation vers le site IAD France avec gestion des cookies"""
@@ -393,8 +377,8 @@ class IADFranceScraper:
         except Exception as e:
             print(f"❌ Erreur lors du scraping: {e}")
         finally:
-            # TOUJOURS fermer le browser, même en cas d'erreur
-            await self.close()
+            await self.browser.close()
+            await self.playwright.stop()
 
     async def _scrape_all_pages(self, max_pages: int, max_biens: int) -> List[Dict[str, Any]]:
         """Scrape toutes les pages"""
@@ -564,17 +548,11 @@ async def main():
     print(f"🏠 Nombre maximum de biens: {args.max_biens}")
     print(f"📄 Pages maximum: {args.max_pages}")
     
-    try:
-        await scraper.scrape(
-            localisation=args.localisation, 
-            max_biens=args.max_biens, 
-            max_pages=args.max_pages
-        )
-    except Exception as e:
-        print(f"❌ Erreur critique: {e}")
-    finally:
-        # Fermeture garantie
-        await scraper.close()
+    await scraper.scrape(
+        localisation=args.localisation, 
+        max_biens=args.max_biens, 
+        max_pages=args.max_pages
+    )
 
 
 if __name__ == "__main__":    

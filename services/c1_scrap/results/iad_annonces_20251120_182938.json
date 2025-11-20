@@ -1,0 +1,1695 @@
+[
+  {
+    "reference": "1891553",
+    "titre": "Appartement à Montpellier (34000)",
+    "prix": "199 000 €",
+    "localisation": "Montpellier (34000)",
+    "surface": "57",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/17/019a9315608c7275d3d9d341da69f0ee.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-2-pieces-montpellier-57m2/r1891553",
+    "date_extraction": "2025-11-20T18:27:36.115122"
+  },
+  {
+    "reference": "1891053",
+    "titre": "Appartement à Montpellier (34000)",
+    "prix": "360 000 €",
+    "localisation": "Montpellier (34000)",
+    "surface": "64",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/20/019aa1a263575c16c153245eb3037623.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-montpellier-64m2/r1891053",
+    "date_extraction": "2025-11-20T18:27:37.302368"
+  },
+  {
+    "reference": "1893235",
+    "titre": "Appartement à Montpellier (34090)",
+    "prix": "290 000 €",
+    "localisation": "Montpellier (34090)",
+    "surface": "56",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/19/019a9c42696b568cf4f51d37c193ca90.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-2-pieces-montpellier-56m2/r1893235",
+    "date_extraction": "2025-11-20T18:27:38.475787"
+  },
+  {
+    "reference": "1891789",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "96 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "23",
+    "pieces": "1",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/18/019a973bc998d312f3940321007b29ac.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-1-piece-montpellier-23m2/r1891789",
+    "date_extraction": "2025-11-20T18:27:39.567046"
+  },
+  {
+    "reference": "1891661",
+    "titre": "Appartement à Montpellier (34080)",
+    "prix": "94 000 €",
+    "localisation": "Montpellier (34080)",
+    "surface": "38",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/18/019a9754e0f5c501b1a2966783f09637.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-2-pieces-montpellier-38m2/r1891661",
+    "date_extraction": "2025-11-20T18:27:40.682095"
+  },
+  {
+    "reference": "1889175",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "178 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "39",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/16/019a8cd25087378e25fd90d19456175d.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-2-pieces-montpellier-39m2/r1889175",
+    "date_extraction": "2025-11-20T18:27:41.787626"
+  },
+  {
+    "reference": "1889868",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "135 500 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "61",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/13/019a7c610624dd5d97993fde20258afb.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-montpellier-61m2/r1889868",
+    "date_extraction": "2025-11-20T18:27:42.891245"
+  },
+  {
+    "reference": "1889214",
+    "titre": "Appartement à MONTPELLIER (34070)",
+    "prix": "180 000 €",
+    "localisation": "MONTPELLIER (34070)",
+    "surface": "67",
+    "pieces": "2",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-montpellier-67m2/r1889214",
+    "date_extraction": "2025-11-20T18:27:44.039171"
+  },
+  {
+    "reference": "1889110",
+    "titre": "Appartement à Montpellier (34090)",
+    "prix": "320 000 €",
+    "localisation": "Montpellier (34090)",
+    "surface": "90",
+    "pieces": "3",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/13/019a7d6b89498fa9831e9b26817c7362.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-4-pieces-montpellier-90m2/r1889110",
+    "date_extraction": "2025-11-20T18:27:45.158250"
+  },
+  {
+    "reference": "1883607",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "189 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "55",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/12/019a78767c07af04bbcf263a5f75fa48.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-2-pieces-montpellier-55m2/r1883607",
+    "date_extraction": "2025-11-20T18:27:46.270059"
+  },
+  {
+    "reference": "1885312",
+    "titre": "Maison à MONTPELLIER (34080)",
+    "prix": "315 000 €",
+    "localisation": "MONTPELLIER (34080)",
+    "surface": "122",
+    "pieces": "4",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/maison-vente-6-pieces-montpellier-122m2/r1885312",
+    "date_extraction": "2025-11-20T18:27:47.385377"
+  },
+  {
+    "reference": "1887434",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "169 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "44",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/10/019a6ec3b2319ebcedb3fd92455b89d1.png?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-2-pieces-montpellier-44m2/r1887434",
+    "date_extraction": "2025-11-20T18:27:48.544050"
+  },
+  {
+    "reference": "1883561",
+    "titre": "Appartement à Montpellier (34090)",
+    "prix": "215 000 €",
+    "localisation": "Montpellier (34090)",
+    "surface": "48",
+    "pieces": "3",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/10/019a6ceff7fb32afb35d0b91707a5338.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-montpellier-48m2/r1883561",
+    "date_extraction": "2025-11-20T18:27:49.647090"
+  },
+  {
+    "reference": "1886031",
+    "titre": "Appartement à Montpellier (34080)",
+    "prix": "145 000 €",
+    "localisation": "Montpellier (34080)",
+    "surface": "68",
+    "pieces": "3",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/07/019a5fcb639bd1bf584894d79ddee49f.png?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-4-pieces-montpellier-68m2/r1886031",
+    "date_extraction": "2025-11-20T18:27:50.789184"
+  },
+  {
+    "reference": "1878714",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "379 500 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "98",
+    "pieces": "3",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/09/019a6ad1853603544e3f0db4261fb792.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-4-pieces-montpellier-98m2/r1878714",
+    "date_extraction": "2025-11-20T18:27:51.921279"
+  },
+  {
+    "reference": "1886234",
+    "titre": "Appartement à Montpellier (34000)",
+    "prix": "165 000 €",
+    "localisation": "Montpellier (34000)",
+    "surface": "47",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/08/019a638508fd7e9f46a6cc5e3a5039d2.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-2-pieces-montpellier-47m2/r1886234",
+    "date_extraction": "2025-11-20T18:27:53.035931"
+  },
+  {
+    "reference": "1885348",
+    "titre": "Appartement à Montpellier (34000)",
+    "prix": "145 000 €",
+    "localisation": "Montpellier (34000)",
+    "surface": "36",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/07/019a5ed4534b2d23cabfc8c563190a63.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-2-pieces-montpellier-36m2/r1885348",
+    "date_extraction": "2025-11-20T18:27:54.147553"
+  },
+  {
+    "reference": "1874842",
+    "titre": "Appartement à Montpellier (34080)",
+    "prix": "89 000 €",
+    "localisation": "Montpellier (34080)",
+    "surface": "29",
+    "pieces": "1",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/06/019a59fda1a1836bc98282fcf1e7bff0.png?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-1-piece-montpellier-29m2/r1874842",
+    "date_extraction": "2025-11-20T18:27:55.279265"
+  },
+  {
+    "reference": "1884128",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "169 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "65",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/05/019a54e8ad7a51dff55151ccedd4d962.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-montpellier-65m2/r1884128",
+    "date_extraction": "2025-11-20T18:27:56.418770"
+  },
+  {
+    "reference": "1880084",
+    "titre": "Duplex à Montpellier (34080)",
+    "prix": "183 000 €",
+    "localisation": "Montpellier (34080)",
+    "surface": "71",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/04/019a4e36aa331d1e55886107489a761b.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-montpellier-71m2/r1880084",
+    "date_extraction": "2025-11-20T18:27:57.614442"
+  },
+  {
+    "reference": "1881531",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "269 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "75",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/07/019a5f03d23012beb33afedd78a2b728.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-montpellier-75m2/r1881531",
+    "date_extraction": "2025-11-20T18:27:58.760438"
+  },
+  {
+    "reference": "1881990",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "186 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "59",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/31/019a3983503e02ac0bdc24f308ed66d5.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-montpellier-59m2/r1881990",
+    "date_extraction": "2025-11-20T18:27:59.937064"
+  },
+  {
+    "reference": "1880618",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "230 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "65",
+    "pieces": "3",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/31/019a3a61cd9641600eb3691276359e04.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-4-pieces-montpellier-65m2/r1880618",
+    "date_extraction": "2025-11-20T18:28:01.033995"
+  },
+  {
+    "reference": "1879822",
+    "titre": "Parking à Montpellier (34000)",
+    "prix": "13 000 €",
+    "localisation": "Montpellier (34000)",
+    "surface": "11",
+    "pieces": "11",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/30/019a34d451253c325b0aae21962cdeeb.png?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/parking-vente-montpellier-11m2/r1879822",
+    "date_extraction": "2025-11-20T18:28:02.180796"
+  },
+  {
+    "reference": "1879821",
+    "titre": "Garage à Montpellier (34000)",
+    "prix": "15 000 €",
+    "localisation": "Montpellier (34000)",
+    "surface": "10",
+    "pieces": "10",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/30/019a3554aa720570e9bb6b83d3918c87.png?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/parking-vente-montpellier-10m2/r1879821",
+    "date_extraction": "2025-11-20T18:28:03.279765"
+  },
+  {
+    "reference": "1878148",
+    "titre": "Parking à Montpellier (34070)",
+    "prix": "11 900 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "9",
+    "pieces": "9",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/30/019a34d5916743213d762f875bf402fc.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/parking-vente-montpellier-9m2/r1878148",
+    "date_extraction": "2025-11-20T18:28:04.356874"
+  },
+  {
+    "reference": "1877594",
+    "titre": "Garage à Montpellier (34080)",
+    "prix": "15 000 €",
+    "localisation": "Montpellier (34080)",
+    "surface": "14",
+    "pieces": "14",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/28/019a2b133755584ddd75049abafcdc9d.png?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/parking-vente-montpellier-14m2/r1877594",
+    "date_extraction": "2025-11-20T18:28:05.511045"
+  },
+  {
+    "reference": "1869512",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "135 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "56",
+    "pieces": "3",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/28/019a29cdb6525c0b99a7504cc356feb2.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-montpellier-56m2/r1869512",
+    "date_extraction": "2025-11-20T18:28:06.617199"
+  },
+  {
+    "reference": "1877544",
+    "titre": "Appartement à Montpellier (34000)",
+    "prix": "205 000 €",
+    "localisation": "Montpellier (34000)",
+    "surface": "49",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/27/019a266a8be3bc36af6f2fdb6afdb1af.png?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-2-pieces-montpellier-49m2/r1877544",
+    "date_extraction": "2025-11-20T18:28:07.746295"
+  },
+  {
+    "reference": "1840260",
+    "titre": "Appartement à MONTPELLIER (34000)",
+    "prix": "105 000 €",
+    "localisation": "MONTPELLIER (34000)",
+    "surface": "28",
+    "pieces": "1",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-1-piece-montpellier-28m2/r1840260",
+    "date_extraction": "2025-11-20T18:28:08.845553"
+  },
+  {
+    "reference": "1876569",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "304 500 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "87",
+    "pieces": "3",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/26/019a2039ef488351ec66734cb05f676a.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-4-pieces-montpellier-87m2/r1876569",
+    "date_extraction": "2025-11-20T18:28:13.213530"
+  },
+  {
+    "reference": "1854869",
+    "titre": "Appartement à MONTPELLIER (34000)",
+    "prix": "123 000 €",
+    "localisation": "MONTPELLIER (34000)",
+    "surface": "21",
+    "pieces": "1",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-1-piece-montpellier-21m2/r1854869",
+    "date_extraction": "2025-11-20T18:28:14.311241"
+  },
+  {
+    "reference": "1874568",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "398 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "110",
+    "pieces": "3",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/23/019a1015f9d49c6c7e94df55ee34ab28.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-4-pieces-montpellier-110m2/r1874568",
+    "date_extraction": "2025-11-20T18:28:15.430288"
+  },
+  {
+    "reference": "1848349",
+    "titre": "Studio à Montpellier (34090)",
+    "prix": "117 000 €",
+    "localisation": "Montpellier (34090)",
+    "surface": "22",
+    "pieces": "1",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/20/019a02f5ac74b68e670a19aefd683f49.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-1-piece-montpellier-22m2/r1848349",
+    "date_extraction": "2025-11-20T18:28:16.534477"
+  },
+  {
+    "reference": "1874449",
+    "titre": "Garage à Montpellier (34090)",
+    "prix": "17 000 €",
+    "localisation": "Montpellier (34090)",
+    "surface": "15",
+    "pieces": "15",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/22/019a0cdc771e3a24b8263ffb5e01847c.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/parking-vente-montpellier-15m2/r1874449",
+    "date_extraction": "2025-11-20T18:28:17.637617"
+  },
+  {
+    "reference": "1874330",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "189 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "58",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/10/019a6e38b09908e7352f571608d47fda.png?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-montpellier-58m2/r1874330",
+    "date_extraction": "2025-11-20T18:28:18.753853"
+  },
+  {
+    "reference": "1873754",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "81 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "31",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/21/019a0883b71367de9e7fac353a48f4d9.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-2-pieces-montpellier-31m2/r1873754",
+    "date_extraction": "2025-11-20T18:28:19.877154"
+  },
+  {
+    "reference": "1872338",
+    "titre": "Maison à Montpellier (34090)",
+    "prix": "625 000 €",
+    "localisation": "Montpellier (34090)",
+    "surface": "123",
+    "pieces": "3",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/21/019a074160b0c912b6f25c260c05ea58.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/maison-vente-5-pieces-montpellier-123m2/r1872338",
+    "date_extraction": "2025-11-20T18:28:20.978565"
+  },
+  {
+    "reference": "1871126",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "189 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "51",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/09/0199c872eadb0747674d445412cbfca0.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-montpellier-51m2/r1871126",
+    "date_extraction": "2025-11-20T18:28:22.077960"
+  },
+  {
+    "reference": "1871334",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "170 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "56",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/17/0199f312671bd91154a80a21613fa909.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-montpellier-56m2/r1871334",
+    "date_extraction": "2025-11-20T18:28:23.230728"
+  },
+  {
+    "reference": "1869733",
+    "titre": "Maison d'architecte à Montpellier (34090)",
+    "prix": "995 000 €",
+    "localisation": "Montpellier (34090)",
+    "surface": "240",
+    "pieces": "4",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/17/0199f1fa2150325d8d31a0c7fe594a19.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/maison-vente-8-pieces-montpellier-240m2/r1869733",
+    "date_extraction": "2025-11-20T18:28:24.344565"
+  },
+  {
+    "reference": "1870687",
+    "titre": "Garage à Montpellier (34070)",
+    "prix": "17 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "12",
+    "pieces": "12",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/17/0199f334410862d930931565f4ca255d.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/parking-vente-montpellier-12m2/r1870687",
+    "date_extraction": "2025-11-20T18:28:25.449012"
+  },
+  {
+    "reference": "1870362",
+    "titre": "Appartement à Montpellier (34000)",
+    "prix": "98 000 €",
+    "localisation": "Montpellier (34000)",
+    "surface": "26",
+    "pieces": "1",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/16/0199edd1f9da33eb22638b36e2334dfb.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-1-piece-montpellier-26m2/r1870362",
+    "date_extraction": "2025-11-20T18:28:26.556621"
+  },
+  {
+    "reference": "1868755",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "89 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "30",
+    "pieces": "1",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/15/0199e9d0e7749048d48f9d50a68dfff4.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-1-piece-montpellier-30m2/r1868755",
+    "date_extraction": "2025-11-20T18:28:27.674801"
+  },
+  {
+    "reference": "1854113",
+    "titre": "Appartement à Montpellier (34080)",
+    "prix": "129 000 €",
+    "localisation": "Montpellier (34080)",
+    "surface": "36",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/15/0199e8a4ead483738b4ea7d78750330b.png?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-2-pieces-montpellier-36m2/r1854113",
+    "date_extraction": "2025-11-20T18:28:28.880829"
+  },
+  {
+    "reference": "1867377",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "215 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "89",
+    "pieces": "3",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/14/0199e18f46647a7f74f87e3ffcc816bb.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-4-pieces-montpellier-89m2/r1867377",
+    "date_extraction": "2025-11-20T18:28:29.989820"
+  },
+  {
+    "reference": "1865710",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "340 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "85",
+    "pieces": "3",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/13/019a7c433e56ccb39f95d3241175877a.png?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-4-pieces-montpellier-85m2/r1865710",
+    "date_extraction": "2025-11-20T18:28:31.112958"
+  },
+  {
+    "reference": "1865479",
+    "titre": "Appartement à Montpellier (34000)",
+    "prix": "173 000 €",
+    "localisation": "Montpellier (34000)",
+    "surface": "43",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/13/0199de1825e47fc7eca683f20316f38f.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-2-pieces-montpellier-43m2/r1865479",
+    "date_extraction": "2025-11-20T18:28:32.218583"
+  },
+  {
+    "reference": "1851928",
+    "titre": "Maison à Montpellier (34070)",
+    "prix": "519 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "127",
+    "pieces": "3",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/13/0199ddf57ffd90dc7a087aa62149c10c.png?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/maison-vente-5-pieces-montpellier-127m2/r1851928",
+    "date_extraction": "2025-11-20T18:28:33.302741"
+  },
+  {
+    "reference": "1864200",
+    "titre": "Appartement à Montpellier (34080)",
+    "prix": "204 000 €",
+    "localisation": "Montpellier (34080)",
+    "surface": "81",
+    "pieces": "4",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/09/0199c84c4ff8e7fc4513217fa59fd389.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-4-pieces-montpellier-81m2/r1864200",
+    "date_extraction": "2025-11-20T18:28:34.418274"
+  },
+  {
+    "reference": "1865742",
+    "titre": "Appartement à Montpellier (34000)",
+    "prix": "235 500 €",
+    "localisation": "Montpellier (34000)",
+    "surface": "60",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/10/0199cf3040a672c56ebf539b42c8f689.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-2-pieces-montpellier-60m2/r1865742",
+    "date_extraction": "2025-11-20T18:28:35.513880"
+  },
+  {
+    "reference": "1863864",
+    "titre": "Appartement à Montpellier (34000)",
+    "prix": "266 000 €",
+    "localisation": "Montpellier (34000)",
+    "surface": "73",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/20/019aa1dc98909760b50c5adf314d5a3b.png?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-montpellier-73m2/r1863864",
+    "date_extraction": "2025-11-20T18:28:36.619829"
+  },
+  {
+    "reference": "1863553",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "199 500 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "62",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/09/0199c8eb0cceb984ec8946ddc7608e11.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-montpellier-62m2/r1863553",
+    "date_extraction": "2025-11-20T18:28:37.728614"
+  },
+  {
+    "reference": "1864073",
+    "titre": "Appartement à Montpellier (34000)",
+    "prix": "529 000 €",
+    "localisation": "Montpellier (34000)",
+    "surface": "101",
+    "pieces": "3",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/09/0199c805d40a2c17723d7f180e7e5b60.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-4-pieces-montpellier-101m2/r1864073",
+    "date_extraction": "2025-11-20T18:28:38.864160"
+  },
+  {
+    "reference": "1864058",
+    "titre": "Appartement à Montpellier (34080)",
+    "prix": "165 000 €",
+    "localisation": "Montpellier (34080)",
+    "surface": "65",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/08/0199c42289b49071577655d0fc11c5f6.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-montpellier-65m2/r1864058",
+    "date_extraction": "2025-11-20T18:28:39.966889"
+  },
+  {
+    "reference": "1862383",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "210 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "74",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/07/0199bebc1f993dd83ca6cc13bf03fb80.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-montpellier-74m2/r1862383",
+    "date_extraction": "2025-11-20T18:28:41.094391"
+  },
+  {
+    "reference": "1862219",
+    "titre": "Appartement à Montpellier (34090)",
+    "prix": "110 000 €",
+    "localisation": "Montpellier (34090)",
+    "surface": "24",
+    "pieces": "1",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/09/23/019975da958e1bd181b00460a1495513.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-1-piece-montpellier-24m2/r1862219",
+    "date_extraction": "2025-11-20T18:28:42.215933"
+  },
+  {
+    "reference": "1856622",
+    "titre": "Appartement à Montpellier (34000)",
+    "prix": "527 000 €",
+    "localisation": "Montpellier (34000)",
+    "surface": "106",
+    "pieces": "3",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/03/0199a9075df0b7ce39fd086e5c30b703.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-4-pieces-montpellier-106m2/r1856622",
+    "date_extraction": "2025-11-20T18:28:43.313842"
+  },
+  {
+    "reference": "1851918",
+    "titre": "Maison à Montpellier (34070)",
+    "prix": "487 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "127",
+    "pieces": "3",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/06/0199b8b1caf05a75359e78ac559d6c1b.png?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/maison-vente-5-pieces-montpellier-127m2/r1851918",
+    "date_extraction": "2025-11-20T18:28:44.446005"
+  },
+  {
+    "reference": "1851906",
+    "titre": "Maison à Montpellier (34070)",
+    "prix": "519 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "127",
+    "pieces": "3",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/06/0199b8a9eda7cd3a98dbd105757ccd37.png?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/maison-vente-5-pieces-montpellier-127m2/r1851906",
+    "date_extraction": "2025-11-20T18:28:45.575089"
+  },
+  {
+    "reference": "1858642",
+    "titre": "Appartement à Montpellier (34000)",
+    "prix": "196 000 €",
+    "localisation": "Montpellier (34000)",
+    "surface": "47",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/04/0199ae83be4a2730eefd19502fac0228.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-2-pieces-montpellier-47m2/r1858642",
+    "date_extraction": "2025-11-20T18:28:49.956974"
+  },
+  {
+    "reference": "1858553",
+    "titre": "Appartement à Montpellier (34000)",
+    "prix": "199 000 €",
+    "localisation": "Montpellier (34000)",
+    "surface": "48",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/02/0199a4712fa8d2ebf10ba255c5984325.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-2-pieces-montpellier-48m2/r1858553",
+    "date_extraction": "2025-11-20T18:28:51.069814"
+  },
+  {
+    "reference": "1838263",
+    "titre": "Appartement à Montpellier (34000)",
+    "prix": "229 000 €",
+    "localisation": "Montpellier (34000)",
+    "surface": "57",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/09/03/01990f6ad498b340461a8096a2b5b5e5.png?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-montpellier-57m2/r1838263",
+    "date_extraction": "2025-11-20T18:28:52.165369"
+  },
+  {
+    "reference": "1854187",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "160 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "44",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/09/29/0199957e50a3f4d71d14d693504ccfd1.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-2-pieces-montpellier-44m2/r1854187",
+    "date_extraction": "2025-11-20T18:28:53.341371"
+  },
+  {
+    "reference": "1854204",
+    "titre": "Appartement à Montpellier (34090)",
+    "prix": "359 000 €",
+    "localisation": "Montpellier (34090)",
+    "surface": "95",
+    "pieces": "3",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/09/29/0199951f9a1dd04f0fd4b355aab5e743.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-4-pieces-montpellier-95m2/r1854204",
+    "date_extraction": "2025-11-20T18:28:54.433592"
+  },
+  {
+    "reference": "1854850",
+    "titre": "Appartement à Montpellier (34000)",
+    "prix": "270 000 €",
+    "localisation": "Montpellier (34000)",
+    "surface": "46",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/09/27/01998add7f65a9c070b1bd3190fedf7f.png?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-2-pieces-montpellier-46m2/r1854850",
+    "date_extraction": "2025-11-20T18:28:55.567533"
+  },
+  {
+    "reference": "1849868",
+    "titre": "Appartement à Montpellier (34000)",
+    "prix": "169 000 €",
+    "localisation": "Montpellier (34000)",
+    "surface": "46",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/09/27/01998a767855ba151670fd8ff3ff6455.png?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-2-pieces-montpellier-46m2/r1849868",
+    "date_extraction": "2025-11-20T18:28:56.679678"
+  },
+  {
+    "reference": "1853338",
+    "titre": "Appartement à Montpellier (34000)",
+    "prix": "355 000 €",
+    "localisation": "Montpellier (34000)",
+    "surface": "81",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/09/26/019986ac1abddbaa8d375e8208ec7bd9.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-montpellier-81m2/r1853338",
+    "date_extraction": "2025-11-20T18:28:57.826920"
+  },
+  {
+    "reference": "1854128",
+    "titre": "Appartement à Montpellier (34090)",
+    "prix": "105 000 €",
+    "localisation": "Montpellier (34090)",
+    "surface": "25",
+    "pieces": "1",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/25/019a1afbd64d537a97c590558ae6d0e6.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-1-piece-montpellier-25m2/r1854128",
+    "date_extraction": "2025-11-20T18:28:59.039009"
+  },
+  {
+    "reference": "1852756",
+    "titre": "Duplex à Montpellier (34070)",
+    "prix": "299 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "77",
+    "pieces": "3",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/09/25/019982664c1434657f15ba1a7cbd0968.png?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-4-pieces-montpellier-77m2/r1852756",
+    "date_extraction": "2025-11-20T18:29:00.148381"
+  },
+  {
+    "reference": "1851343",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "295 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "99",
+    "pieces": "3",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/09/23/0199769f2ad35ec55a949ab1de68f3c5.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-4-pieces-montpellier-99m2/r1851343",
+    "date_extraction": "2025-11-20T18:29:01.322608"
+  },
+  {
+    "reference": "1850285",
+    "titre": "Maison traditionnelle à Montpellier (34080)",
+    "prix": "292 000 €",
+    "localisation": "Montpellier (34080)",
+    "surface": "115",
+    "pieces": "4",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/09/23/019976be5fdc2aa16d9e77a8adb6ec4e.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/maison-vente-5-pieces-montpellier-115m2/r1850285",
+    "date_extraction": "2025-11-20T18:29:02.422670"
+  },
+  {
+    "reference": "1851020",
+    "titre": "Maison traditionnelle à Montpellier (34080)",
+    "prix": "1 250 000 €",
+    "localisation": "Montpellier (34080)",
+    "surface": "250",
+    "pieces": "5",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/09/23/019975665b4d43c68ba0a69790e7f971.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/maison-vente-8-pieces-montpellier-250m2/r1851020",
+    "date_extraction": "2025-11-20T18:29:03.524856"
+  },
+  {
+    "reference": "1850485",
+    "titre": "Appartement à Montpellier (34080)",
+    "prix": "199 000 €",
+    "localisation": "Montpellier (34080)",
+    "surface": "64",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/09/22/019971a6422b6f51c1e5fd51f1d3e0ad.png?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-montpellier-64m2/r1850485",
+    "date_extraction": "2025-11-20T18:29:04.625951"
+  },
+  {
+    "reference": "1847237",
+    "titre": "Appartement à Montpellier (34080)",
+    "prix": "315 000 €",
+    "localisation": "Montpellier (34080)",
+    "surface": "93",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/09/22/019971b9fee6b29b1ec5573b29bf80bf.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-montpellier-93m2/r1847237",
+    "date_extraction": "2025-11-20T18:29:05.730433"
+  },
+  {
+    "reference": "1849444",
+    "titre": "Appartement à Montpellier (34090)",
+    "prix": "398 000 €",
+    "localisation": "Montpellier (34090)",
+    "surface": "92",
+    "pieces": "3",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/09/16/019952f2d2174222c80843b77a56508d.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-4-pieces-montpellier-92m2/r1849444",
+    "date_extraction": "2025-11-20T18:29:06.866203"
+  },
+  {
+    "reference": "1849266",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "230 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "52",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/29/019a2fc6f5865024885d12913501ecc4.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-2-pieces-montpellier-52m2/r1849266",
+    "date_extraction": "2025-11-20T18:29:07.959575"
+  },
+  {
+    "reference": "1848891",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "340 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "102",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/09/20/019967bb57ae0626ffe8270f2500af46.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-montpellier-102m2/r1848891",
+    "date_extraction": "2025-11-20T18:29:09.061472"
+  },
+  {
+    "reference": "1848712",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "155 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "45",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/09/20/01996690c3ebc8cad0770c454a000479.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-2-pieces-montpellier-45m2/r1848712",
+    "date_extraction": "2025-11-20T18:29:10.170334"
+  },
+  {
+    "reference": "1848920",
+    "titre": "Appartement à Montpellier (34080)",
+    "prix": "143 000 €",
+    "localisation": "Montpellier (34080)",
+    "surface": "38",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/09/20/019965d7a239ac972259cd1a20878fc3.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-2-pieces-montpellier-38m2/r1848920",
+    "date_extraction": "2025-11-20T18:29:11.262476"
+  },
+  {
+    "reference": "1848405",
+    "titre": "Appartement à MONTPELLIER (34000)",
+    "prix": "129 000 €",
+    "localisation": "MONTPELLIER (34000)",
+    "surface": "33",
+    "pieces": "1",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-1-piece-montpellier-33m2/r1848405",
+    "date_extraction": "2025-11-20T18:29:12.412586"
+  },
+  {
+    "reference": "1846955",
+    "titre": "Appartement à Montpellier (34000)",
+    "prix": "97 000 €",
+    "localisation": "Montpellier (34000)",
+    "surface": "18",
+    "pieces": "1",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/09/19/019961699290480cc7ffc0d68d61f40a.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-1-piece-montpellier-18m2/r1846955",
+    "date_extraction": "2025-11-20T18:29:13.575364"
+  },
+  {
+    "reference": "1848479",
+    "titre": "Appartement à Montpellier (34000)",
+    "prix": "293 000 €",
+    "localisation": "Montpellier (34000)",
+    "surface": "66",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/09/18/01995d97ae97c03009ad3dbe596c1351.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-montpellier-66m2/r1848479",
+    "date_extraction": "2025-11-20T18:29:14.694190"
+  },
+  {
+    "reference": "1846260",
+    "titre": "Maison à Montpellier (34070)",
+    "prix": "258 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "60",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/09/16/019953195a53adaae276225361aa2bbf.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/maison-vente-3-pieces-montpellier-60m2/r1846260",
+    "date_extraction": "2025-11-20T18:29:15.803882"
+  },
+  {
+    "reference": "1846588",
+    "titre": "Appartement à Montpellier (34000)",
+    "prix": "80 000 €",
+    "localisation": "Montpellier (34000)",
+    "surface": "25",
+    "pieces": "1",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/09/16/019953a51ecb8b2251ef5ed066256aac.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-1-piece-montpellier-25m2/r1846588",
+    "date_extraction": "2025-11-20T18:29:16.965001"
+  },
+  {
+    "reference": "1843854",
+    "titre": "Appartement à Montpellier (34000)",
+    "prix": "150 000 €",
+    "localisation": "Montpellier (34000)",
+    "surface": "30",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/09/17/01995815afb838be7ae46d279f8ea873.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-2-pieces-montpellier-30m2/r1843854",
+    "date_extraction": "2025-11-20T18:29:18.061451"
+  },
+  {
+    "reference": "1841306",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "199 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "67",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/09/16/019953131c5b482277f3798af19a6ded.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-montpellier-67m2/r1841306",
+    "date_extraction": "2025-11-20T18:29:19.157009"
+  },
+  {
+    "reference": "1842820",
+    "titre": "Studio à Montpellier (34070)",
+    "prix": "100 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "28",
+    "pieces": "1",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/09/11/019939a92735ce07f00b66971a476414.png?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-1-piece-montpellier-28m2/r1842820",
+    "date_extraction": "2025-11-20T18:29:20.256893"
+  },
+  {
+    "reference": "1843045",
+    "titre": "Appartement à MONTPELLIER (34070)",
+    "prix": "229 000 €",
+    "localisation": "MONTPELLIER (34070)",
+    "surface": "120",
+    "pieces": "4",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-5-pieces-montpellier-120m2/r1843045",
+    "date_extraction": "2025-11-20T18:29:21.384091"
+  },
+  {
+    "reference": "1837136",
+    "titre": "Appartement à Montpellier (34000)",
+    "prix": "325 000 €",
+    "localisation": "Montpellier (34000)",
+    "surface": "58",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/09/09/019930650b691890354cb8a66b87b4e0.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-montpellier-58m2/r1837136",
+    "date_extraction": "2025-11-20T18:29:22.474252"
+  },
+  {
+    "reference": "1876569",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "304 500 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "87",
+    "pieces": "3",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/26/019a2039ef488351ec66734cb05f676a.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-4-pieces-montpellier-87m2/r1876569",
+    "date_extraction": "2025-11-20T18:29:27.001549"
+  },
+  {
+    "reference": "1854869",
+    "titre": "Appartement à MONTPELLIER (34000)",
+    "prix": "123 000 €",
+    "localisation": "MONTPELLIER (34000)",
+    "surface": "21",
+    "pieces": "1",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-1-piece-montpellier-21m2/r1854869",
+    "date_extraction": "2025-11-20T18:29:28.094089"
+  },
+  {
+    "reference": "1874568",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "398 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "110",
+    "pieces": "3",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/23/019a1015f9d49c6c7e94df55ee34ab28.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-4-pieces-montpellier-110m2/r1874568",
+    "date_extraction": "2025-11-20T18:29:29.185677"
+  },
+  {
+    "reference": "1848349",
+    "titre": "Studio à Montpellier (34090)",
+    "prix": "117 000 €",
+    "localisation": "Montpellier (34090)",
+    "surface": "22",
+    "pieces": "1",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/20/019a02f5ac74b68e670a19aefd683f49.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-1-piece-montpellier-22m2/r1848349",
+    "date_extraction": "2025-11-20T18:29:30.322652"
+  },
+  {
+    "reference": "1874449",
+    "titre": "Garage à Montpellier (34090)",
+    "prix": "17 000 €",
+    "localisation": "Montpellier (34090)",
+    "surface": "15",
+    "pieces": "15",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/22/019a0cdc771e3a24b8263ffb5e01847c.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/parking-vente-montpellier-15m2/r1874449",
+    "date_extraction": "2025-11-20T18:29:31.434068"
+  },
+  {
+    "reference": "1874330",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "189 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "58",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/10/019a6e38b09908e7352f571608d47fda.png?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-montpellier-58m2/r1874330",
+    "date_extraction": "2025-11-20T18:29:32.558952"
+  },
+  {
+    "reference": "1873754",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "81 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "31",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/21/019a0883b71367de9e7fac353a48f4d9.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-2-pieces-montpellier-31m2/r1873754",
+    "date_extraction": "2025-11-20T18:29:33.713787"
+  },
+  {
+    "reference": "1872338",
+    "titre": "Maison à Montpellier (34090)",
+    "prix": "625 000 €",
+    "localisation": "Montpellier (34090)",
+    "surface": "123",
+    "pieces": "3",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/21/019a074160b0c912b6f25c260c05ea58.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/maison-vente-5-pieces-montpellier-123m2/r1872338",
+    "date_extraction": "2025-11-20T18:29:34.812487"
+  },
+  {
+    "reference": "1871126",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "189 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "51",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/09/0199c872eadb0747674d445412cbfca0.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-montpellier-51m2/r1871126",
+    "date_extraction": "2025-11-20T18:29:35.905865"
+  },
+  {
+    "reference": "1871334",
+    "titre": "Appartement à Montpellier (34070)",
+    "prix": "170 000 €",
+    "localisation": "Montpellier (34070)",
+    "surface": "56",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/10/17/0199f312671bd91154a80a21613fa909.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-montpellier-56m2/r1871334",
+    "date_extraction": "2025-11-20T18:29:37.032179"
+  }
+]

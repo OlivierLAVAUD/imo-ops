@@ -1,0 +1,172 @@
+[
+  {
+    "reference": "1880839",
+    "titre": "Appartement à Paris (75019)",
+    "prix": "348 000 €",
+    "localisation": "Paris (75019)",
+    "surface": "51",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/15/019a84eae008ee635f8b56e4f1547f37.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-paris-51m2/r1880839",
+    "date_extraction": "2025-11-15T02:14:49.448384"
+  },
+  {
+    "reference": "1888421",
+    "titre": "Appartement à Paris (75011)",
+    "prix": "650 000 €",
+    "localisation": "Paris (75011)",
+    "surface": "65",
+    "pieces": "1",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/14/019a83998aa4ab2ef12ad93bdc922023.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-2-pieces-paris-65m2/r1888421",
+    "date_extraction": "2025-11-15T02:14:50.563099"
+  },
+  {
+    "reference": "1888422",
+    "titre": "Appartement à Paris (75011)",
+    "prix": "650 000 €",
+    "localisation": "Paris (75011)",
+    "surface": "65",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/14/019a8398682fe81128ed0806dcfdd93d.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-paris-65m2/r1888422",
+    "date_extraction": "2025-11-15T02:14:51.685381"
+  },
+  {
+    "reference": "1887262",
+    "titre": "Immeuble à Paris (75019)",
+    "prix": "500 000 €",
+    "localisation": "Paris (75019)",
+    "surface": "66",
+    "pieces": "66",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/14/019a83941d73e30504e0cf3951cdffc5.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/immeuble-vente-paris-66m2/r1887262",
+    "date_extraction": "2025-11-15T02:14:52.792484"
+  },
+  {
+    "reference": "1890266",
+    "titre": "Appartement à Paris (75013)",
+    "prix": "1 680 000 €",
+    "localisation": "Paris (75013)",
+    "surface": "137",
+    "pieces": "3",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/14/019a82b4fc5095925f8277477e9ffd75.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-5-pieces-paris-137m2/r1890266",
+    "date_extraction": "2025-11-15T02:14:53.895072"
+  },
+  {
+    "reference": "1889562",
+    "titre": "Appartement à Paris (75007)",
+    "prix": "550 000 €",
+    "localisation": "Paris (75007)",
+    "surface": "37",
+    "pieces": "1",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/14/019a828567896e76d8e6a0af24162973.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-2-pieces-paris-37m2/r1889562",
+    "date_extraction": "2025-11-15T02:14:55.045481"
+  },
+  {
+    "reference": "1890110",
+    "titre": "Appartement à Paris (75007)",
+    "prix": "249 000 €",
+    "localisation": "Paris (75007)",
+    "surface": "18",
+    "pieces": "1",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/14/019a8221786559e5e15b718a0d47281f.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-1-piece-paris-18m2/r1890110",
+    "date_extraction": "2025-11-15T02:14:56.179591"
+  },
+  {
+    "reference": "1888876",
+    "titre": "Appartement à Paris (75011)",
+    "prix": "1 248 000 €",
+    "localisation": "Paris (75011)",
+    "surface": "107",
+    "pieces": "6",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/14/019a81dd0a7a4244065e5ac082d1dd11.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-6-pieces-paris-107m2/r1888876",
+    "date_extraction": "2025-11-15T02:14:57.299948"
+  },
+  {
+    "reference": "1877641",
+    "titre": "Appartement à Paris (75020)",
+    "prix": "359 000 €",
+    "localisation": "Paris (75020)",
+    "surface": "37",
+    "pieces": "1",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/09/019a699b3cee181dd5418e79c93e8eb2.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-2-pieces-paris-37m2/r1877641",
+    "date_extraction": "2025-11-15T02:14:58.390470"
+  },
+  {
+    "reference": "1889042",
+    "titre": "Appartement à Paris (75019)",
+    "prix": "790 000 €",
+    "localisation": "Paris (75019)",
+    "surface": "85",
+    "pieces": "3",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/14/019a816ad7053b7bd209ca6bd44c0587.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-4-pieces-paris-85m2/r1889042",
+    "date_extraction": "2025-11-15T02:14:59.542204"
+  }
+]

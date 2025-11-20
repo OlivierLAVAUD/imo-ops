@@ -1,10 +1,6 @@
-version: '3.8'
-
 services:
   iad-scraper:
-    build: 
-      context: .
-      dockerfile: Dockerfile
+    build: .
     container_name: iad-scraper
     volumes:
       - ./results:/app/results
@@ -12,25 +8,4 @@ services:
       - ./logs:/app/logs
     environment:
       - PYTHONUNBUFFERED=1
-      - MAX_BIENS=1
-      - MAX_PAGES=10
-      - LOCALISATION=Paris
-#     restart: unless-stopped
-
-  iad-scraper-custom:
-    build: 
-      context: .
-      dockerfile: Dockerfile
-    container_name: iad-scraper-custom
-    volumes:
-      - ./results:/app/results
-      - ./config.json:/app/config.json
-      - ./logs:/app/logs
-    environment:
-      - PYTHONUNBUFFERED=1
-      - MAX_BIENS=${MAX_BIENS:-10}
-      - MAX_PAGES=${MAX_PAGES:-20}
-      - LOCALISATION=${LOCALISATION:-Montpellier}
-    command: ["python", "iad_scraper.py", "--localisation", "${LOCALISATION:-Montpellier}", "--max-biens", "${MAX_BIENS:-100}", "--max-pages", "${MAX_PAGES:-20}"]
-    restart: "no"
-#    restart: unless-stopped
+    restart: unless-stopped

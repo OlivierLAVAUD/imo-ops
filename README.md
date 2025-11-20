@@ -251,6 +251,9 @@ docker-compose --profile gradio up -d
 
 # for Spark
 docker-compose --profile spark up -d
+
+# for Scraping
+docker-compose --profile scraping up -d
 ```
 - check
 ```bash
@@ -289,8 +292,25 @@ docker-compose --profile spark up -d
 ###  Compétence C1: Automatisation de l'extraction de données (c1_scrap Service:)
 
 ```bash
-cd c1_scrap
-# see the README.md file
+# 1. Demarrer le service de scraping (le conteneur reste démarré et actif)
+docker-compose --profile scraping  up -d
+
+# 2. Lancer la requete de scraping
+docker exec iad-scraper python iad_scraper.py --localisation "Paris" --max-biens 10
+docker exec iad-scraper python iad_scraper.py --localisation "Lyon" --max-biens 5
+
+# 3. Voir les fichiers dans le conteneur
+docker exec iad-scraper ls -la /app/results/
+
+# 4. Copier tout le répertoire de resultats produits
+docker cp iad-scraper:/app/results/ ./downloads/
+
+# 5. Copier un fichier spécifique du conteneur vers votre machine
+docker cp iad-scraper:/app/results/mon_fichier.json ./downloads/
+
+# 6. Arrêter & supprimer le conteneur, images, .. associées
+docker-compose --profile scraping down -v --rmi all
+
 ```
 ### Compétences C2: Développement de requêtes SQL(c2_sql Service)
 ```bash

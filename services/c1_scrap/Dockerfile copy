@@ -30,21 +30,29 @@ RUN pip install uv
 
 WORKDIR /app
 
-# Copier les fichiers
-COPY requirements.txt config.json iad_scraper.py ./
+# Créer un répertoire de cache pour UV
+ENV UV_CACHE_DIR=/root/.cache/uv
+RUN mkdir -p ${UV_CACHE_DIR}
 
-# Installer les dépendances Python avec UV
-RUN uv pip install --system -r requirements.txt
+# Copier les fichiers de configuration
+COPY requirements.txt .
+COPY config.json .
 
-# Installer Playwright
+# Installer les dépendances Python avec UV et cache
+RUN --mount=type=cache,target=${UV_CACHE_DIR} \
+    uv pip install --system --cache-dir ${UV_CACHE_DIR} -r requirements.txt
+
+# Installer Playwright et les browsers
 RUN playwright install chromium
 RUN playwright install-deps
 
-# Créer les répertoires
+# Copier le code source
+COPY iad_scraper.py .
+
+# Créer les répertoires nécessaires
 RUN mkdir -p /app/results /app/logs
 
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONPATH=/app
 
-# Commande par défaut - juste garder le conteneur en vie
-CMD ["tail", "-f", "/dev/null"]
+CMD ["sh", "-c", "python iad_scraper.py --localisation \"${LOCALISATION:-Montpellier}\" --max-biens \"${MAX_BIENS:-100}\" --max-pages \"${MAX_PAGES:-20}\" && tail -f /dev/null"]

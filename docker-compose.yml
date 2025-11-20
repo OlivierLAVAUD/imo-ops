@@ -144,6 +144,19 @@ services:
     profiles: ["spark"]
 
 
+  # Services de scraping
+  iad-scraper:
+    build: ./services/c1_scrap
+    container_name: iad-scraper
+    volumes:
+      - ./services/c1_scrap/results:/app/results
+      - ./services/c1_scrap/config.json:/app/config.json
+      - ./services/c1_scrap/logs:/app/logs
+    networks:
+      - imo-ops-network
+    profiles: ["scraping"]
+    restart: unless-stopped
+
 networks:
   imo-ops-network:
     driver: bridge
