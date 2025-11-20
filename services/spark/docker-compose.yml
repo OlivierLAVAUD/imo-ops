@@ -1,0 +1,99 @@
+version: '3.8'
+
+services:
+  spark-master:
+    image: apache/spark:3.5.1
+    container_name: spark-master
+    user: root
+    ports:
+      - "8085:8080"
+      - "7077:7077"
+    volumes:
+      - ./scripts:/opt/scripts
+      - spark-events:/tmp/spark-events  
+    networks:
+      - imo-ops-network
+    environment:
+      - SPARK_MASTER_PORT=7077
+      - SPARK_MASTER_WEBUI_PORT=8080
+      - SPARK_HISTORY_OPTS=-Dspark.history.fs.logDirectory=file:/tmp/spark-events  # ← AJOUTER
+    command: >
+      sh -c "
+        chmod +x /opt/scripts/*.sh /opt/scripts/*.py &&
+        mkdir -p /tmp/spark-events &&
+        /opt/spark/bin/spark-class org.apache.spark.deploy.master.Master --host spark-master --port 7077 --webui-port 8080
+      "
+
+  spark-worker:
+    image: apache/spark:3.5.1
+    container_name: spark-worker
+    user: root
+    volumes:
+      - ./scripts:/opt/scripts
+      - spark-events:/tmp/spark-events 
+    networks:
+      - imo-ops-network
+    environment:
+      - SPARK_MASTER=spark://spark-master:7077
+      - SPARK_HISTORY_OPTS=-Dspark.history.fs.logDirectory=file:/tmp/spark-events  # ← AJOUTER
+    depends_on:
+      - spark-master
+    command: >
+      sh -c "
+        chmod +x /opt/scripts/*.sh /opt/scripts/*.py &&
+        mkdir -p /tmp/spark-events &&
+        echo 'En attente du Spark Master...' &&
+        sleep 30 &&
+        /opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker spark://spark-master:7077
+      "
+
+  spark-history-server:
+    image: apache/spark:3.5.1
+    container_name: spark-history-server
+    user: root
+    ports:
+      - "18080:18080"
+    volumes:
+      - ./scripts:/opt/scripts
+      - spark-events:/tmp/spark-events  
+    networks:
+      - imo-ops-network
+    environment:
+      - SPARK_HISTORY_OPTS=-Dspark.history.fs.logDirectory=file:/tmp/spark-events  # ← AJOUTER
+    depends_on:
+      - spark-master
+    command: >
+      sh -c "
+        chmod +x /opt/scripts/*.sh /opt/scripts/*.py &&
+        mkdir -p /tmp/spark-events &&
+        /opt/spark/bin/spark-class org.apache.spark.deploy.history.HistoryServer
+      "
+
+  spark-submit:
+    image: apache/spark:3.5.1
+    container_name: spark-submit
+    user: root
+    volumes:
+      - ./scripts:/opt/scripts
+      - spark-events:/tmp/spark-events  
+    networks:
+      - imo-ops-network
+    environment:
+      - SPARK_HISTORY_OPTS=-Dspark.history.fs.logDirectory=file:/tmp/spark-events  # ← AJOUTER
+    depends_on:
+      - spark-master
+    stdin_open: true
+    tty: true
+    command: >
+      sh -c "
+        chmod +x /opt/scripts/*.sh /opt/scripts/*.py &&
+        mkdir -p /tmp/spark-events &&
+        tail -f /dev/null
+      "
+
+networks:
+  imo-ops-network:
+    external: true
+
+volumes:
+  spark-events:  #

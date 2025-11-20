@@ -80,6 +80,7 @@ services:
     networks:
       - imo-ops-network
     profiles: ["airflow"]
+
   mongodb:
     extends:
       file: ./services/mongodb/docker-compose.yml
@@ -88,6 +89,7 @@ services:
       - ./services/mongodb/.env
     networks:
       - imo-ops-network
+    profiles: ["mongodb"]
 
   gradio_sql:
     build: ./services/gradio_sql
@@ -98,7 +100,50 @@ services:
       - "7860:7860"
     networks:
       - imo-ops-network
+    profiles: ["gradio"]
       
+  # Services Spark
+  spark-master:
+    extends:
+      file: ./services/spark/docker-compose.yml
+      service: spark-master
+    env_file:
+      - ./services/spark/.env
+    networks:
+      - imo-ops-network
+    profiles: ["spark"]
+
+  spark-worker:
+    extends:
+      file: ./services/spark/docker-compose.yml
+      service: spark-worker
+    env_file:
+      - ./services/spark/.env
+    networks:
+      - imo-ops-network
+    profiles: ["spark"]
+
+  spark-history-server:
+    extends:
+      file: ./services/spark/docker-compose.yml
+      service: spark-history-server
+    env_file:
+      - ./services/spark/.env
+    networks:
+      - imo-ops-network
+    profiles: ["spark"]
+
+  spark-submit:
+    extends:
+      file: ./services/spark/docker-compose.yml
+      service: spark-submit
+    env_file:
+      - ./services/spark/.env
+    networks:
+      - imo-ops-network
+    profiles: ["spark"]
+
+
 networks:
   imo-ops-network:
     driver: bridge
@@ -108,3 +153,4 @@ volumes:
   pgadmin-data:
   mongo_data:
   redis-data:
+  spark-events:

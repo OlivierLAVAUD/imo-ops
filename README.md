@@ -123,42 +123,67 @@ flowchart TB
   - Redis (https://redis.io/)
   - Plawright (https://playwright.dev/)
 
-# Installation & Usage 
-
-## Clone the repo
+# Installation
+-  Clone the repo and access to files
 ```bash
 git clone https://github.com/OlivierLAVAUD/imo-ops.git
+
 cd imo-ops
 ```
-### - Install with sources
-####  Create python env
+
+## install with docker
+
+- Launch Docker-Desktop before
+- ..., then launch docker services
 ```bash
-uv venv
-
-# for Windows
-.venv\Scripts\activate
-
-# or for Linux, Ubuntu
-source .venv/bin/activate
-```
-
-####   Synchronize packages
-```bash
-uv sync
-```
-
-
-### - Install with Docker
-
-
-####  Launch Docker-Desktop before and run all the services
-```bash
+# for all services
 docker-compose up -d
 
- # Access to the applications from Docker Desktop with https://localhost:<ports>
-```
+# for Airflow profile services
+docker-compose --profile airflow up -d
 
-## Source code & scripts
+# for noSQL Database: MongoDB profile services
+docker-compose --profile mongodb up -d
+
+# for Gradio app with gradio profile services
+docker-compose --profile gradio up -d
+
+# for Spark
+docker-compose --profile spark up -d
+```
+- check
+```bash
+# Vérifier que tout fonctionne
+docker-compose ps
+```
+Then acess to the applications from Docker Desktop with https://localhost:<ports>
+
+
+
+- Spark 
+```bash
+# Tester un job
+docker-compose exec spark-submit /opt/scripts/submit-job.sh /opt/scripts/wordcount.py
+
+# Ou tester spark-shell interactif
+docker-compose exec spark-submit /opt/spark/bin/spark-shell
+
+# Redémarrer complètement
+docker-compose --profile spark down -v --rmi all
+docker-compose --profile spark up -d
+
+```
+🌐 URLs d'accès :
+
+    - Spark Master UI : http://localhost:8085 
+    - Spark History Server : http://localhost:18080
+    - Airflow : http://localhost:8080
+
+![spark](img/spark-1.png)
+
+
+
+## Compétences
 ###  Compétence C1: Automatisation de l'extraction de données (c1_scrap Service:)
 
 ```bash
@@ -188,12 +213,26 @@ cd c5_api
 ```
 
 
-# Technichal References
+# Notes
 ## Docker
+
+Install with docker
+
+```bash
+docker-compose --profile airflow up -d
+```
+
 Cleaning Docker
 ```bash
+
+docker-compose --profile airflow down -v --rmi all
+
 # Arrête et supprime les conteneurs, réseaux, volumes, images buildées du projet courant
 docker-compose down -v --rmi all
+
+# Supprime le cache du build
+docker builder prune
+docker system prune -f
 
 ```
 
