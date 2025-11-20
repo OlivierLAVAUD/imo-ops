@@ -29,7 +29,7 @@ Les sources de données:
 site web: IAD-Immobilier (https://www.iadfrance.fr/): annonces achats, ventes, location sur critères multiples: 
 
 
-## Architecture AirfloW-Redis-Postgres-Mongodb pour MlOps
+## Architecture Airflow-Redis-Postgres-Mongodb pour MlOps
 
 
 ```mermaid
@@ -111,7 +111,7 @@ flowchart TB
   AggAPI --> DBAPI
   
 ```
-# Architecture AirfloW-Redis-Spark-Postgres pour MLOps
+# Architecture Airflow-Redis-Spark-Postgres pour MLOps
 ```mermaid
 flowchart TB
 
