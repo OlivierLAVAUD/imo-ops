@@ -195,8 +195,5 @@ Cleaning Docker
 # Arrête et supprime les conteneurs, réseaux, volumes, images buildées du projet courant
 docker-compose down -v --rmi all
 
-# Supprime le cache du build
-docker builder prune
-
 ```
 

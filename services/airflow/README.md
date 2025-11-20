@@ -134,5 +134,13 @@ print('✅ Tous les imports pour votre DAG fonctionnent parfaitement!')
 "
 
 
-
 ```
+
+# Annexes:
+
+![](img/airflow-5.png)
+![](img/airflow-2.png)
+![](img/airflow-3.png)
+![](img/airflow-4.png)
+
+
