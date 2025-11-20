@@ -24,29 +24,13 @@ RUN chmod +x /opt/airflow/scripts/*.sh && \
 # Retour à l'utilisateur airflow
 USER airflow
 
-# CORRECTION : Installer d'abord les dépendances critiques
-RUN pip install --no-cache-dir --upgrade pip
-
-# CORRECTION : Installer psycopg2-binary en premier
-RUN pip install --no-cache-dir \
-    psycopg2-binary==2.9.6
-
-# CORRECTION : Copier requirements.txt AVANT l'installation
-COPY requirements.txt /opt/airflow/
-
-# CORRECTION : Installer les requirements avec l'option --no-deps pour éviter les conflits
-RUN if [ -f "/opt/airflow/requirements.txt" ]; then \
-        pip install --no-cache-dir --no-deps -r /opt/airflow/requirements.txt; \
-    fi
-
-# CORRECTION : Installer les providers APRÈS les requirements principaux
+# Installation des providers avec des versions compatibles
 RUN pip install --no-cache-dir \
     apache-airflow-providers-postgres==5.0.0 \
     apache-airflow-providers-celery==3.3.0 \
-    apache-airflow-providers-redis==3.0.0
-
-# Installation optionnelle de flask-session
-RUN pip install --no-cache-dir flask-session==0.4.0
+    apache-airflow-providers-redis==3.0.0 \
+    flask-session==0.4.0 \
+    psycopg2-binary==2.9.6
 
 # Copier les fichiers nécessaires
 COPY ./dags /opt/airflow/dags
@@ -54,20 +38,22 @@ COPY ./config /opt/airflow/config
 COPY ./plugins /opt/airflow/plugins
 COPY ./sql /opt/airflow/sql
 
+# Copier le requirements.txt
+COPY requirements.txt /opt/airflow/
+
+# Installation des dépendances depuis requirements.txt
+RUN if [ -f "/opt/airflow/requirements.txt" ]; then \
+        pip install --no-cache-dir -r /opt/airflow/requirements.txt; \
+    fi
+
 # Définir une valeur par défaut pour la variable
 ENV _PIP_ADDITIONAL_REQUIREMENTS=${_PIP_ADDITIONAL_REQUIREMENTS:-}
 
 # Installation des dépendances supplémentaires
-RUN if [ -n "${_PIP_ADDITIONAL_REQUIREMENTS}" ]; then \
-        pip install --no-cache-dir ${_PIP_ADDITIONAL_REQUIREMENTS}; \
-    fi
+RUN if [ -n "${_PIP_ADDITIONAL_REQUIREMENTS}" ]; then pip install --no-cache-dir ${_PIP_ADDITIONAL_REQUIREMENTS}; fi
 
 # Copier le script de test
 COPY test_postgres.py /opt/airflow/
-
-# Script d'initialisation des connexions
-COPY init_airflow_connections.sh /opt/airflow/scripts/
-RUN chmod +x /opt/airflow/scripts/init_airflow_connections.sh
 
 # Exposer le port
 EXPOSE 8080

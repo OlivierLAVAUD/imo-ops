@@ -1,10 +1,13 @@
 db.createUser({
-  user: "app_user",
-  pwd: "password_app",
+  user: "admin",
+  pwd: "apassword,
   roles: [
     {
       role: "readWrite",
-      db: "imo_db"
+      db: "myapp"
     }
   ]
 });
+
+// Créer une collection de test
+db.createCollection("imo_collection");

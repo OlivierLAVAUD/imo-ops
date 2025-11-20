@@ -56,13 +56,13 @@ services:
       POSTGRES_USER: ${POSTGRES_USER:-airflow}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-airflow}
       POSTGRES_DB: ${POSTGRES_DB:-airflow}
-      POSTGRES_MULTIPLE_DATABASES: ${POSTGRES_MULTIPLE_DATABASES:-imo_db,airflow}
+      POSTGRES_MULTIPLE_DATABASES: ${POSTGRES_MULTIPLE_DATABASES:-imo_db,airflow_db}
     volumes:
       - postgres-db-volume:/var/lib/postgresql/data
       - ./config/pg_hba.conf:/tmp/pg_hba.conf.template:ro
       - ./scripts/configure_pg_hba.sh:/docker-entrypoint-initdb.d/01_configure_pg_hba.sh
+     
       - ./sql/00_system_config.sql:/docker-entrypoint-initdb.d/00_system_config.sql
-      - ./sql/01_create_databases.sql:/docker-entrypoint-initdb.d/01_create_databases.sql
       - ./sql/02_create_imo_db.sql:/docker-entrypoint-initdb.d/02_create_imo_db.sql
       - ./sql/03_imo_db_shema.sql:/docker-entrypoint-initdb.d/03_imo_db_schema.sql
     ports:
@@ -231,45 +231,9 @@ services:
         mkdir -p /sources/logs /sources/dags /sources/plugins
         chown -R "${AIRFLOW_UID}:0" /sources/{logs,dags,plugins}
         
-        # 🔥 CORRECTION : Système de verrou simplifié sans variables problématiques
-        lock_file="/tmp/airflow_init.lock"
-        max_wait_time=300  # 5 minutes
-        wait_time=0
-        
-        # Attendre que le verrou soit libéré si un autre service est en train d'initialiser
-        if [ -f "$$lock_file" ]; then
-            echo "⚠️  Initialisation Airflow déjà en cours par un autre service..."
-            echo "⏳ Attente de la fin de l'initialisation..."
-            while [ -f "$$lock_file" ] && [ $$wait_time -lt $$max_wait_time ]; do
-                sleep 5
-                wait_time=$$((wait_time + 5))
-                echo "⏱️  Attente depuis $${wait_time}s..."
-            done
-            
-            if [ -f "$$lock_file" ]; then
-                echo "❌ Timeout - le verrou n'a pas été libéré après $${max_wait_time}s"
-                echo "🚀 Continuation malgré tout..."
-            else
-                echo "✅ Initialisation terminée par un autre service"
-                # Vérifier que la base est vraiment initialisée
-                if PGPASSWORD=airflow psql -h postgres -U airflow -d airflow -c "SELECT COUNT(*) FROM alembic_version;" >/dev/null 2>&1; then
-                    echo "✅ Base Airflow correctement initialisée"
-                    exit 0
-                else
-                    echo "⚠️  Base non initialisée, continuation..."
-                fi
-            fi
-        fi
-        
-        # Créer le verrou
-        echo "🔒 Début de l'initialisation Airflow..."
-        touch "$$lock_file"
-        
-        # Nettoyer le verrou en cas d'arrêt
-        trap "rm -f $$lock_file; echo '🔓 Nettoyage du verrou'; exit 1" SIGTERM SIGINT
-        
         # Attendre que PostgreSQL soit complètement configuré
         echo "⏳ Attente de la configuration PostgreSQL..."
+        # CORRECTION : Utiliser PGPASSWORD pour éviter la prompt de mot de passe
         until PGPASSWORD=airflow psql -h postgres -U airflow -d airflow -c "SELECT 1;" >/dev/null 2>&1; do
           echo "En attente de PostgreSQL..."
           sleep 5
@@ -280,40 +244,35 @@ services:
         echo "🔍 Vérification des bases de données..."
         max_retries=30
         retry_count=0
-        while [ $$retry_count -lt $$max_retries ]; do
-          if PGPASSWORD=password psql -h postgres -U imo_user -d imo_db -c "SELECT 1" >/dev/null 2>&1; then
+        # CORRECTION : Utiliser PGPASSWORD ici aussi
+        while [ $retry_count -lt $max_retries ]; do
+          if PGPASSWORD=airflow psql -h postgres -U airflow -d imo_db -c "SELECT 1" >/dev/null 2>&1; then
             echo "✅ Base imo_db est prête"
             break
           else
-            echo "⏳ En attente de la création de imo_db... ($$((retry_count + 1))/$$max_retries)"
+            echo "⏳ En attente de la création de imo_db... ($((retry_count + 1))/$max_retries)"
             sleep 5
-            retry_count=$$((retry_count + 1))
+            retry_count=$((retry_count + 1))
           fi
         done
         
-        if [ $$retry_count -eq $$max_retries ]; then
+        if [ $retry_count -eq $max_retries ]; then
           echo "⚠️  imo_db n'est pas encore prête, continuation de l'initialisation Airflow..."
         fi
         
-        # 🔥 CORRECTION : Vérifier si la base Airflow est déjà initialisée
-        echo "🔍 Vérification de l'état de la base Airflow..."
-        if PGPASSWORD=airflow psql -h postgres -U airflow -d airflow -c "SELECT COUNT(*) FROM alembic_version;" >/dev/null 2>&1; then
-          echo "✅ Base Airflow déjà initialisée - pas besoin de réinitialiser"
-        else
-          # Initialisation de la base de données Airflow
-          echo "🔄 Initialisation de la base de données Airflow..."
-          airflow db init
-          
-          # Création de l'utilisateur admin
-          echo "👤 Création de l'utilisateur admin..."
-          airflow users create \
-            --username admin \
-            --password admin \
-            --firstname Admin \
-            --lastname User \
-            --role Admin \
-            --email admin@example.com
-        fi
+        # Initialisation de la base de données Airflow
+        echo "🔄 Initialisation de la base de données Airflow..."
+        airflow db init
+        
+        # Création de l'utilisateur admin
+        echo "👤 Création de l'utilisateur admin..."
+        airflow users create \
+          --username admin \
+          --password admin \
+          --firstname Admin \
+          --lastname User \
+          --role Admin \
+          --email admin@example.com
         
         # Test de connexion PostgreSQL étendu
         echo "🧪 Test de connexion PostgreSQL étendu..."
@@ -323,71 +282,20 @@ services:
             echo "⚠️  psycopg2 non disponible, installation..."
             pip install psycopg2-binary
             python /opt/airflow/test_postgres.py || echo "⚠️  Test PostgreSQL avec erreurs, mais continuation..."
-        fi
-        
-        # 🔥 INITIALISATION DES CONNEXIONS AIRFLOW
-        echo ""
-        echo "🔗 ==========================================="
-        echo "🔗 INITIALISATION DES CONNEXIONS AIRFLOW"
-        echo "🔗 ==========================================="
-        
-        # Vérifier que le script existe
-        if [ -f "/opt/airflow/scripts/init_airflow_connections.sh" ]; then
-            echo "📁 Script d'initialisation trouvé"
-            chmod +x /opt/airflow/scripts/init_airflow_connections.sh
-            
-            # Exécuter le script
-            if /opt/airflow/scripts/init_airflow_connections.sh; then
-                echo "✅ Initialisation des connexions terminée avec succès"
-            else
-                echo "⚠️  Initialisation des connexions avec des avertissements"
-            fi
-        else
-            echo "❌ Script d'initialisation non trouvé: /opt/airflow/scripts/init_airflow_connections.sh"
-            echo "📋 Création manuelle des connexions..."
-            
-            # Création manuelle de fallback
-            airflow connections add 'imo_db' \
-              --conn-type 'postgres' \
-              --conn-host 'postgres' \
-              --conn-schema 'imo_db' \
-              --conn-login 'imo_user' \
-              --conn-password 'password' \
-              --conn-port '5432' \
-              --conn-extra '{"sslmode": "prefer"}'
-            
-            airflow connections add 'redis_default' \
-              --conn-type 'redis' \
-              --conn-host 'redis' \
-              --conn-port '6379' \
-              --conn-extra '{"db": 0}'
-            
-            echo "✅ Connexions créées manuellement"
-        fi
-        
-        # 🔥 LIBÉRATION DU VERROU
-        rm -f "$$lock_file"
-        echo "🔓 Verrou libéré"
-        
-        echo ""
-        echo "🎯 ==========================================="
-        echo "🎯 INITIALISATION AIRFLOW TERMINÉE"
-        echo "🎯 ==========================================="
-        echo "✅ Base de données initialisée"
-        echo "✅ Utilisateur admin créé"
-        echo "✅ Connexions configurées"
-        echo "✅ Prêt à démarrer!"
-        
+        fi  
+        echo "✅ Initialisation Airflow terminée avec succès!"
         exec /entrypoint airflow version
-        
     environment:
       <<: *airflow-common-env
+      _AIRFLOW_DB_MIGRATE: 'true'
+      _AIRFLOW_WWW_USER_CREATE: 'true'
+      _AIRFLOW_WWW_USER_USERNAME: ${_AIRFLOW_WWW_USER_USERNAME:-airflow}
+      _AIRFLOW_WWW_USER_PASSWORD: ${_AIRFLOW_WWW_USER_PASSWORD:-airflow}
       _PIP_ADDITIONAL_REQUIREMENTS: ''
     user: "0:0"
     volumes:
       - ${AIRFLOW_PROJ_DIR:-.}:/sources
       - ${AIRFLOW_PROJ_DIR:-.}/test_postgres.py:/opt/airflow/test_postgres.py
-      - ${AIRFLOW_PROJ_DIR:-.}/scripts:/opt/airflow/scripts
 
   airflow-cli:
     <<: *airflow-common

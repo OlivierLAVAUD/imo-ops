@@ -1,0 +1,44 @@
+# Utilisation de l'image de base officielle Apache Airflow
+FROM apache/airflow:2.10.5
+
+# Définir le répertoire de travail
+WORKDIR /opt/airflow
+
+# Installation des providers PostgreSQL, Redis et Celery
+USER root
+
+# Installation des dépendances système pour psycopg2
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+        gcc \
+        python3-dev \
+        libpq-dev \
+        && apt-get clean \
+        && rm -rf /var/lib/apt/lists/*
+
+USER airflow
+
+# Installation des providers nécessaires
+RUN pip install --no-cache-dir \
+    apache-airflow-providers-postgres==5.8.0 \
+    apache-airflow-providers-redis==3.4.0 \
+    apache-airflow-providers-celery==3.3.0 \
+    psycopg2-binary==2.9.7
+
+# Copier les fichiers nécessaires dans l'image Docker
+COPY ./dags /opt/airflow/dags
+COPY ./config /opt/airflow/config
+COPY ./plugins /opt/airflow/plugins
+
+# Définir une valeur par défaut pour la variable
+ENV _PIP_ADDITIONAL_REQUIREMENTS=${_PIP_ADDITIONAL_REQUIREMENTS:-}
+
+# Installation des dépendances supplémentaires si nécessaires
+RUN if [ -n "${_PIP_ADDITIONAL_REQUIREMENTS}" ]; then pip install --no-cache-dir ${_PIP_ADDITIONAL_REQUIREMENTS}; fi
+
+# Exposer le port pour le serveur web d'Airflow
+EXPOSE 8080
+
+# Commande par défaut pour démarrer Airflow
+ENTRYPOINT ["bash", "/entrypoint"]
+CMD ["airflow", "webserver"]

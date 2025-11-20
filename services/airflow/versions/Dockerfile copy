@@ -1,0 +1,49 @@
+# Utilisation de l'image de base officielle Apache Airflow avec la version 2.7.3
+FROM apache/airflow:2.7.3
+
+# Définir le répertoire de travail
+WORKDIR /opt/airflow
+
+# Installation des dépendances système
+USER root
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+        gcc \
+        python3-dev \
+        libpq-dev \
+        curl \
+        && apt-get clean \
+        && rm -rf /var/lib/apt/lists/*
+
+USER airflow
+
+# Installation des providers avec des versions compatibles
+RUN pip install --no-cache-dir \
+    apache-airflow-providers-celery==3.3.0 \
+    flask-session==0.4.0
+
+# Copier les fichiers nécessaires
+COPY ./dags /opt/airflow/dags
+COPY ./config /opt/airflow/config
+COPY ./plugins /opt/airflow/plugins
+
+# Copier le requirements.txt
+COPY requirements.txt /opt/airflow/
+
+# Installation des dépendances depuis requirements.txt
+RUN if [ -f "/opt/airflow/requirements.txt" ]; then \
+        pip install --no-cache-dir -r /opt/airflow/requirements.txt; \
+    fi
+
+# Définir une valeur par défaut pour la variable
+ENV _PIP_ADDITIONAL_REQUIREMENTS=${_PIP_ADDITIONAL_REQUIREMENTS:-}
+
+# Installation des dépendances supplémentaires
+RUN if [ -n "${_PIP_ADDITIONAL_REQUIREMENTS}" ]; then pip install --no-cache-dir ${_PIP_ADDITIONAL_REQUIREMENTS}; fi
+
+# Exposer le port
+EXPOSE 8080
+
+# Commande par défaut
+ENTRYPOINT ["bash", "/entrypoint"]
+CMD ["airflow", "webserver"]

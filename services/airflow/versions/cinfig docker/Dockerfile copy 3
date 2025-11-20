@@ -1,0 +1,41 @@
+# Utilisation de l'image de base officielle Apache Airflow avec la version 2.7.3
+FROM apache/airflow:2.7.3
+
+# Définir le répertoire de travail
+WORKDIR /opt/airflow
+
+# Installation des dépendances système
+USER root
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+        postgresql-client \
+        && apt-get clean \
+        && rm -rf /var/lib/apt/lists/*
+
+# Copier requirements.txt AVANT l'installation
+COPY requirements.txt .
+
+# Installation des dépendances Python
+USER airflow
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
+
+# Copier les fichiers nécessaires
+COPY ./dags /opt/airflow/dags
+COPY ./config /opt/airflow/config
+COPY ./plugins /opt/airflow/plugins
+COPY ./sql /opt/airflow/sql
+COPY ./scripts /opt/airflow/scripts
+COPY test_postgres.py /opt/airflow/
+
+# Donner les permissions d'exécution aux scripts
+USER root
+RUN chmod +x /opt/airflow/scripts/*.sh
+USER airflow
+
+# Exposer le port
+EXPOSE 8080
+
+# Commande par défaut
+ENTRYPOINT ["bash", "/entrypoint"]
+CMD ["airflow", "webserver"]

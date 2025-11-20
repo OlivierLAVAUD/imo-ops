@@ -6,21 +6,28 @@
     - MongoDB          (https://www.mongodb.com/) 
     - MongoDB Compass  ( https://www.mongodb.com/products/tools/compass) 
     - MongoDB Shell     (https://www.mongodb.com/try/download/shell)
+    - mongosh ( )    
 
 # Installation 
 
-## en local
+```
+docker-compose up -d mondodb
+```
 
 
+## mongosh
+```bash
+ npm install -g mongosh
 
 
-## avec Docker
+```
 
 
 # Utilisation
 
 ```bash
-docker exec -it mongodb mongosh
+# Tester en local
+ docker exec -it mongodb mongosh -u root -p
 
 # Tester depuis l'hôte
 docker exec -it mongodb mongosh -u admin -p password --authenticationDatabase admin
@@ -28,4 +35,7 @@ docker exec -it mongodb mongosh -u admin -p password --authenticationDatabase ad
 # Ou depuis l'extérieur
 mongosh "mongodb://admin:password@localhost:27017/admin"
 
+
+# import ds donnéees agregées
+uv run .\import_mongodb_agrege.py
 ```

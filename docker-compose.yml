@@ -1,116 +1,110 @@
 services:
-
   # Services Airflow
-  redis:
-    extends:
-      file: ./services/redis/docker-compose.yml
-      service: redis
-    networks:
-      - databox_network
-
-  airflow-init:
-    extends:
-      file: ./services/airflow/docker-compose.yml
-      service: airflow-init
-    networks:
-      - databox_network
-    depends_on:
-      postgres:
-        condition: service_healthy
-      redis:
-        condition: service_healthy
-
-  airflow-webserver:
+  airflow:
     extends:
       file: ./services/airflow/docker-compose.yml
       service: airflow-webserver
+    env_file:
+      - ./services/airflow/.env
     networks:
-      - databox_network
-    depends_on:
-      - airflow-init
-      - postgres
-      - redis
+      - imo-ops-network
+    profiles: ["airflow"]
 
   airflow-scheduler:
     extends:
       file: ./services/airflow/docker-compose.yml
       service: airflow-scheduler
+    env_file:
+      - ./services/airflow/.env
     networks:
-      - databox_network
-    depends_on:
-      - airflow-init
-      - postgres
-      - redis
+      - imo-ops-network
+    profiles: ["airflow"]
 
   airflow-worker:
     extends:
       file: ./services/airflow/docker-compose.yml
       service: airflow-worker
+    env_file:
+      - ./services/airflow/.env
     networks:
-      - databox_network
-    depends_on:
-      - airflow-init
-      - postgres
-      - redis
- 
+      - imo-ops-network
+    profiles: ["airflow"]
 
+  airflow-init:
+    extends:
+      file: ./services/airflow/docker-compose.yml
+      service: airflow-init
+    env_file:
+      - ./services/airflow/.env
+    networks:
+      - imo-ops-network
+    profiles: ["airflow"]
+
+  airflow-triggerer:
+    extends:
+      file: ./services/airflow/docker-compose.yml
+      service: airflow-triggerer
+    env_file:
+      - ./services/airflow/.env
+    networks:
+      - imo-ops-network
+    profiles: ["airflow"]
+
+  # Services de base Airflow
   postgres:
     extends:
-      file: ./services/postgres/docker-compose.yml
+      file: ./services/airflow/docker-compose.yml
       service: postgres
+    env_file:
+      - ./services/airflow/.env
     networks:
-      - databox_network
+      - imo-ops-network
+    profiles: ["airflow"]
 
+  redis:
+    extends:
+      file: ./services/airflow/docker-compose.yml
+      service: redis
+    env_file:
+      - ./services/airflow/.env
+    networks:
+      - imo-ops-network
+    profiles: ["airflow"]
 
   pgadmin:
     extends:
-      file: ./services/pgadmin/docker-compose.yml
+      file: ./services/airflow/docker-compose.yml
       service: pgadmin
+    env_file:
+      - ./services/airflow/.env
     networks:
-      - databox_network
-    depends_on:
-      - postgres
-
-  grafana:
+      - imo-ops-network
+    profiles: ["airflow"]
+  mongodb:
     extends:
-      file: ./services/grafana/docker-compose.yml
-      service: grafana
+      file: ./services/mongodb/docker-compose.yml
+      service: mongodb
+    env_file:
+      - ./services/mongodb/.env
     networks:
-      - databox_network
-
-  dashboard:
-    extends:
-      file: ./services/dashboard/docker-compose.yml
-      service: dashboard
-    networks:
-      - databox_network
+      - imo-ops-network
 
   gradio_sql:
-    extends:
-      file: ./services/gradio_sql/docker-compose.yml
-      service: gradio_sql
+    build: ./services/gradio_sql
+    container_name: app_gradio_sql
+    environment:
+      IMO_URL: ${IMO_URL:-postgresql://imo_user:password@postgres:5432/imo_db}
+    ports:
+      - "7860:7860"
     networks:
-      - databox_network
-    depends_on:
-      - postgres
-
-  mongodb:
-      extends:
-        file: ./services/mongodb/docker-compose.yml
-        service: mongodb
-      networks:
-        - databox_network
-
+      - imo-ops-network
+      
 networks:
-  databox_network:
+  imo-ops-network:
     driver: bridge
 
-volumes:  
-  postgres_data:
-  grafana_data:
-  pg_admin_data:
-  airflow_dags:
-  airflow_logs:
-  airflow_plugins:
-  redis_data:
+volumes:
+  postgres-db-volume:
+  pgadmin-data:
   mongo_data:
+  redis-data:

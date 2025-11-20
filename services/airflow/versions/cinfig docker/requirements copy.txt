@@ -1,0 +1,6 @@
+apache-airflow[celery,postgres,redis]==2.7.3
+apache-airflow-providers-celery==3.3.0
+apache-airflow-providers-postgres==5.0.0
+apache-airflow-providers-redis==3.0.0
+flask-session==0.4.0
+psycopg2-binary==2.9.6

@@ -65,10 +65,6 @@ RUN if [ -n "${_PIP_ADDITIONAL_REQUIREMENTS}" ]; then \
 # Copier le script de test
 COPY test_postgres.py /opt/airflow/
 
-# Script d'initialisation des connexions
-COPY init_airflow_connections.sh /opt/airflow/scripts/
-RUN chmod +x /opt/airflow/scripts/init_airflow_connections.sh
-
 # Exposer le port
 EXPOSE 8080
 

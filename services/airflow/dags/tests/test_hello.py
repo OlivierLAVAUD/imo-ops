@@ -14,7 +14,7 @@ default_args = {
 }
 
 with DAG(
-    'test_dag2',  # Nom du DAG
+    'test_hello',  # Nom du DAG
     default_args=default_args,
     description='A simple test DAG',
     schedule_interval='@once',  # Exécution une seule fois

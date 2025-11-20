@@ -231,23 +231,23 @@ services:
         mkdir -p /sources/logs /sources/dags /sources/plugins
         chown -R "${AIRFLOW_UID}:0" /sources/{logs,dags,plugins}
         
-        # 🔥 CORRECTION : Système de verrou simplifié sans variables problématiques
-        lock_file="/tmp/airflow_init.lock"
-        max_wait_time=300  # 5 minutes
-        wait_time=0
+        # 🔥 CORRECTION : Système de verrou pour éviter l'initialisation multiple
+        LOCKFILE="/tmp/airflow_init.lock"
+        MAX_WAIT=300  # 5 minutes maximum d'attente
+        WAIT_TIME=0
         
         # Attendre que le verrou soit libéré si un autre service est en train d'initialiser
-        if [ -f "$$lock_file" ]; then
+        if [ -f "$LOCKFILE" ]; then
             echo "⚠️  Initialisation Airflow déjà en cours par un autre service..."
             echo "⏳ Attente de la fin de l'initialisation..."
-            while [ -f "$$lock_file" ] && [ $$wait_time -lt $$max_wait_time ]; do
+            while [ -f "$LOCKFILE" ] && [ $WAIT_TIME -lt $MAX_WAIT ]; do
                 sleep 5
-                wait_time=$$((wait_time + 5))
-                echo "⏱️  Attente depuis $${wait_time}s..."
+                WAIT_TIME=$((WAIT_TIME + 5))
+                echo "⏱️  Attente depuis ${WAIT_TIME}s..."
             done
             
-            if [ -f "$$lock_file" ]; then
-                echo "❌ Timeout - le verrou n'a pas été libéré après $${max_wait_time}s"
+            if [ -f "$LOCKFILE" ]; then
+                echo "❌ Timeout - le verrou n'a pas été libéré après ${MAX_WAIT}s"
                 echo "🚀 Continuation malgré tout..."
             else
                 echo "✅ Initialisation terminée par un autre service"
@@ -263,10 +263,10 @@ services:
         
         # Créer le verrou
         echo "🔒 Début de l'initialisation Airflow..."
-        touch "$$lock_file"
+        touch "$LOCKFILE"
         
         # Nettoyer le verrou en cas d'arrêt
-        trap "rm -f $$lock_file; echo '🔓 Nettoyage du verrou'; exit 1" SIGTERM SIGINT
+        trap "rm -f $LOCKFILE; echo '🔓 Nettoyage du verrou'; exit 1" SIGTERM SIGINT
         
         # Attendre que PostgreSQL soit complètement configuré
         echo "⏳ Attente de la configuration PostgreSQL..."
@@ -280,18 +280,18 @@ services:
         echo "🔍 Vérification des bases de données..."
         max_retries=30
         retry_count=0
-        while [ $$retry_count -lt $$max_retries ]; do
+        while [ $retry_count -lt $max_retries ]; do
           if PGPASSWORD=password psql -h postgres -U imo_user -d imo_db -c "SELECT 1" >/dev/null 2>&1; then
             echo "✅ Base imo_db est prête"
             break
           else
-            echo "⏳ En attente de la création de imo_db... ($$((retry_count + 1))/$$max_retries)"
+            echo "⏳ En attente de la création de imo_db... ($((retry_count + 1))/$max_retries)"
             sleep 5
-            retry_count=$$((retry_count + 1))
+            retry_count=$((retry_count + 1))
           fi
         done
         
-        if [ $$retry_count -eq $$max_retries ]; then
+        if [ $retry_count -eq $max_retries ]; then
           echo "⚠️  imo_db n'est pas encore prête, continuation de l'initialisation Airflow..."
         fi
         
@@ -366,7 +366,7 @@ services:
         fi
         
         # 🔥 LIBÉRATION DU VERROU
-        rm -f "$$lock_file"
+        rm -f "$LOCKFILE"
         echo "🔓 Verrou libéré"
         
         echo ""
@@ -382,6 +382,9 @@ services:
         
     environment:
       <<: *airflow-common-env
+      # 🔥 CORRECTION : RETIRER les variables d'initialisation automatique
+      # _AIRFLOW_DB_MIGRATE: 'true'
+      # _AIRFLOW_WWW_USER_CREATE: 'true'
       _PIP_ADDITIONAL_REQUIREMENTS: ''
     user: "0:0"
     volumes:
