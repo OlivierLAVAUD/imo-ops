@@ -338,6 +338,11 @@ cd c4_create_db
 cd c5_api
 # see the README.md file
 ```
+### Compétence RGPD: Mise en conformité RGPD des services.
+```bash
+cd compliance-RGPD
+# see the README.md file
+```
 
 
 # Notes
