@@ -1,0 +1,172 @@
+[
+  {
+    "reference": "1886718",
+    "titre": "Appartement à Lyon (69006)",
+    "prix": "190 000 €",
+    "localisation": "Lyon (69006)",
+    "surface": "32",
+    "pieces": "1",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/16/019a8e29391f32d446f37be9e04ca5b9.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-1-piece-lyon-32m2/r1886718",
+    "date_extraction": "2025-11-16T23:55:34.706605"
+  },
+  {
+    "reference": "1890590",
+    "titre": "Maison à Lyon (69008)",
+    "prix": "895 000 €",
+    "localisation": "Lyon (69008)",
+    "surface": "210",
+    "pieces": "5",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/15/019a889e8dfcabb34e0471c8874a8244.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/maison-vente-6-pieces-lyon-210m2/r1890590",
+    "date_extraction": "2025-11-16T23:55:35.834509"
+  },
+  {
+    "reference": "1887926",
+    "titre": "Appartement à Lyon (69008)",
+    "prix": "210 000 €",
+    "localisation": "Lyon (69008)",
+    "surface": "87",
+    "pieces": "3",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/15/019a87293265148f10844ef6160f4080.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-4-pieces-lyon-87m2/r1887926",
+    "date_extraction": "2025-11-16T23:55:36.958226"
+  },
+  {
+    "reference": "1888547",
+    "titre": "Appartement à Lyon (69003)",
+    "prix": "750 000 €",
+    "localisation": "Lyon (69003)",
+    "surface": "140",
+    "pieces": "4",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/15/019a84ee167600e0a11fa03cbab5e593.png?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-5-pieces-lyon-140m2/r1888547",
+    "date_extraction": "2025-11-16T23:55:38.082492"
+  },
+  {
+    "reference": "1887420",
+    "titre": "Appartement à Lyon (69008)",
+    "prix": "299 000 €",
+    "localisation": "Lyon (69008)",
+    "surface": "67",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/10/019a6eda1998486573eac7f016f52545.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-lyon-67m2/r1887420",
+    "date_extraction": "2025-11-16T23:55:39.206739"
+  },
+  {
+    "reference": "1887641",
+    "titre": "Appartement à Lyon (69006)",
+    "prix": "465 000 €",
+    "localisation": "Lyon (69006)",
+    "surface": "96",
+    "pieces": "3",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/14/019a818daa15a0bdefa22ec0d87570f4.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-5-pieces-lyon-96m2/r1887641",
+    "date_extraction": "2025-11-16T23:55:40.361777"
+  },
+  {
+    "reference": "1886456",
+    "titre": "Appartement à Lyon (69005)",
+    "prix": "278 000 €",
+    "localisation": "Lyon (69005)",
+    "surface": "67",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/08/019a645eb5afbf8bac83196e5d270b9c.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-lyon-67m2/r1886456",
+    "date_extraction": "2025-11-16T23:55:41.470935"
+  },
+  {
+    "reference": "1879787",
+    "titre": "Appartement à Lyon (69003)",
+    "prix": "260 000 €",
+    "localisation": "Lyon (69003)",
+    "surface": "73",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/08/019a63f8389a2fa1e55dbb1af2db2b21.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-lyon-73m2/r1879787",
+    "date_extraction": "2025-11-16T23:55:42.576663"
+  },
+  {
+    "reference": "1882053",
+    "titre": "Appartement à Lyon (69004)",
+    "prix": "520 000 €",
+    "localisation": "Lyon (69004)",
+    "surface": "134",
+    "pieces": "4",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/08/019a633662b172357f6b757869029d4b.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-5-pieces-lyon-134m2/r1882053",
+    "date_extraction": "2025-11-16T23:55:43.681427"
+  },
+  {
+    "reference": "1884719",
+    "titre": "Studio à Lyon (69007)",
+    "prix": "165 000 €",
+    "localisation": "Lyon (69007)",
+    "surface": "34",
+    "pieces": "1",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/06/019a5a04cc24d5ab4542040836d6a67e.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-1-piece-lyon-34m2/r1884719",
+    "date_extraction": "2025-11-16T23:55:44.791051"
+  }
+]

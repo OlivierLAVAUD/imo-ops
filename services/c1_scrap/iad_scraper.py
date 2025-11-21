@@ -572,7 +572,7 @@ async def main():
         )
     except Exception as e:
         print(f"❌ Erreur critique: {e}")
-    finally:
+    finally:    
         # Fermeture garantie
         await scraper.close()
 

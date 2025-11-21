@@ -1,0 +1,172 @@
+[
+  {
+    "reference": "1893315",
+    "titre": "Appartement à Paris (75007)",
+    "prix": "699 000 €",
+    "localisation": "Paris (75007)",
+    "surface": "57",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/20/019aa23a9131f767d3e3fae78014def4.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-2-pieces-paris-57m2/r1893315",
+    "date_extraction": "2025-11-20T18:27:36.107662"
+  },
+  {
+    "reference": "1892714",
+    "titre": "Appartement à Paris (75017)",
+    "prix": "345 000 €",
+    "localisation": "Paris (75017)",
+    "surface": "32",
+    "pieces": "1",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/18/019a96f18df161e20a1c4b208cde9349.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-1-piece-paris-32m2/r1892714",
+    "date_extraction": "2025-11-20T18:27:37.265243"
+  },
+  {
+    "reference": "1890484",
+    "titre": "Parking à Paris (75010)",
+    "prix": "19 500 €",
+    "localisation": "Paris (75010)",
+    "surface": "12",
+    "pieces": "12",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/20/019aa113716b848b009530e0d1daea4e.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/parking-vente-paris-12m2/r1890484",
+    "date_extraction": "2025-11-20T18:27:38.461566"
+  },
+  {
+    "reference": "1892106",
+    "titre": "Appartement à Paris (75019)",
+    "prix": "190 000 €",
+    "localisation": "Paris (75019)",
+    "surface": "17",
+    "pieces": "1",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/20/019aa0e80debb71940e958c5445ce72d.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-1-piece-paris-17m2/r1892106",
+    "date_extraction": "2025-11-20T18:27:39.547204"
+  },
+  {
+    "reference": "1894003",
+    "titre": "Appartement à Paris (75013)",
+    "prix": "545 000 €",
+    "localisation": "Paris (75013)",
+    "surface": "97",
+    "pieces": "3",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/19/019a9d9ea0777c441d31ac75ab2ad9c0.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-5-pieces-paris-97m2/r1894003",
+    "date_extraction": "2025-11-20T18:27:40.672907"
+  },
+  {
+    "reference": "1888816",
+    "titre": "Appartement à Paris (75016)",
+    "prix": "1 080 000 €",
+    "localisation": "Paris (75016)",
+    "surface": "77",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/20/019aa04e4f3af81ff13d3c9bf7c521ee.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-3-pieces-paris-77m2/r1888816",
+    "date_extraction": "2025-11-20T18:27:41.787847"
+  },
+  {
+    "reference": "1892517",
+    "titre": "Appartement à Paris (75020)",
+    "prix": "115 000 €",
+    "localisation": "Paris (75020)",
+    "surface": "10",
+    "pieces": "1",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/18/019a98e4af52c175ec3436764e926cae.png?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-1-piece-paris-10m2/r1892517",
+    "date_extraction": "2025-11-20T18:27:42.906765"
+  },
+  {
+    "reference": "1883599",
+    "titre": "Appartement à Paris (75018)",
+    "prix": "440 000 €",
+    "localisation": "Paris (75018)",
+    "surface": "37",
+    "pieces": "2",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/13/019a7d4fb977b3f54bf605ff8dc7751b.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-2-pieces-paris-37m2/r1883599",
+    "date_extraction": "2025-11-20T18:27:44.045973"
+  },
+  {
+    "reference": "1893584",
+    "titre": "Terrain à Saint rémy de maurienne (73660)",
+    "prix": "86 000 €",
+    "localisation": "Saint rémy de maurienne (73660)",
+    "surface": "130",
+    "pieces": "406",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/19/019a9c2fcff7d55a6d6222e8c6305cc6.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/terrain-vente-saint-remy-de-maurienne-406130m2/r1893584",
+    "date_extraction": "2025-11-20T18:27:45.174790"
+  },
+  {
+    "reference": "1892934",
+    "titre": "Appartement à Paris (75014)",
+    "prix": "980 000 €",
+    "localisation": "Paris (75014)",
+    "surface": "102",
+    "pieces": "4",
+    "image_url": "https://images.iadfrance.fr/property/broadcast/2025/11/18/019a98e878d95e9ab937c4c5d253ed31.jpg?format=auto&width=300",
+    "media_info": {
+      "nombre_photos": 0,
+      "has_video": false,
+      "has_visite_virtuelle": false,
+      "media_description": ""
+    },
+    "lien": "https://www.iadfrance.fr/annonce/appartement-vente-4-pieces-paris-102m2/r1892934",
+    "date_extraction": "2025-11-20T18:27:46.268750"
+  }
+]

@@ -1,0 +1,13 @@
+services:
+  iad-scraper:
+    build: .
+    container_name: iad-scraper
+    volumes:
+      - ./results:/app/results
+      - ./config.json:/app/config.json
+      - ./config-playwright.json:/app/config-playwright.json
+      - ./config_out.json:/app/config_out.json
+      - ./logs:/app/logs
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
