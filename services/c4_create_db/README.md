@@ -129,3 +129,15 @@ WHERE a.reference = '1885312';
 
 ```
 
+## Adaptations Windows
+# Réinitialiser l'encodage
+```bash
+chcp 65001
+[Console]::OutputEncoding = [System.Text.Encoding]::GetEncoding(65001)
+[Console]::InputEncoding = [System.Text.Encoding]::GetEncoding(65001)
+
+# Lancer psql avec variables d'environnement
+$env:PGCLIENTENCODING = 'UTF8'
+$env:LANG = 'fr_FR.UTF-8'
+psql -U postgres -d imo_db
+```
