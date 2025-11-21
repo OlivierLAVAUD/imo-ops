@@ -24,6 +24,7 @@ postgres, fichiers csv
 - batch/pipelines de stockage en base de données SQL & NoSQL
 - batch/pipeline d’interrogation des données
 - batch/pipeline de mise à disposition des données
+- mise en conformité RGPD
 
 Les sources de données:
 site web: IAD-Immobilier (https://www.iadfrance.fr/): annonces achats, ventes, location sur critères multiples: 
@@ -254,6 +255,10 @@ docker-compose --profile spark up -d
 
 # for Scraping
 docker-compose --profile scraping up -d
+
+# for Compliance-RGPD ( README.MD + Scripts-API-DAGs)
+cd compliance-RGPD 
+
 ```
 - check
 ```bash

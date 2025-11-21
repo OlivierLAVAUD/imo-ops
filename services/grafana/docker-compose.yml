@@ -8,8 +8,10 @@ services:
        - grafana_data:/var/lib/grafana
     depends_on:
       - postgres
-    networks:
-      - databox_network
+      
+  networks:
+    imo-ops-network:
+      driver: bridge
 
   volumes:
     grafana_data:
